@@ -1,12 +1,15 @@
 <template>
   <div class="">
-    <Topbar />
-    <Welcome />
-    <Features />
-    <Downloads />
-    <FAQs />
-    <ContactUs />
-    <Footer />
+    <section>
+      {{ readersNumber }} {{ book }}
+      <Topbar />
+      <Welcome />
+      <Features />
+      <Downloads />
+      <FAQs />
+      <ContactUs />
+      <Footer />
+    </section>
   </div>
 </template>
 

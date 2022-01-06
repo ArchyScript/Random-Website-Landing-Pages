@@ -19,6 +19,7 @@
         <span class="cursor-pointer fa fa-github"></span>
         <span class="cursor-pointer fa fa-twitter"></span>
         <span class="cursor-pointer fa fa-youtube-play"></span>
+        SquareroofLandingPage
         <span class="cursor-pointer fa fa-instagram"></span>
         <span class="cursor-pointer fa fa-facebook-square"></span>
       </div>

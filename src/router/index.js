@@ -4,6 +4,8 @@ import Home from '../views/Home.vue'
 // Routes
 const LandingPage = () =>
     import ('@/components/LandingPage/Main.vue')
+const SquareroofLandingPage = () =>
+    import ('@/components/SquareroofLandingPage/Main.vue')
 
 const routes = [{
         path: '/',
@@ -14,6 +16,11 @@ const routes = [{
         path: '/landing-page',
         name: 'LandingPage',
         component: LandingPage,
+    },
+    {
+        path: '/squareroof',
+        name: 'SquareroofLandingPage',
+        component: SquareroofLandingPage,
     },
     {
         path: '/about',
