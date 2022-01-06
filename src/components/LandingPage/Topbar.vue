@@ -1,6 +1,8 @@
 <template>
-  <header>
-    <nav class="container flex items-ceter py-4 mt-4 sm:mt-8">
+  <header
+    class="flex items-center text-white bg-gray-800 shadow-lg fixed top-0 inset-x-0 z-50 h-16"
+  >
+    <nav class="container flex items-ceter py-4">
       <div class="py-1"><img src="" alt="log" /></div>
 
       <ul

@@ -1,9 +1,7 @@
 <template>
   <!-- Welcome Page -->
-  <section id="welcome" class="relative">
-    <div
-      class="container flex flex-col-reverse lg:flex-row gap-12 mt-14 lg:mt-20"
-    >
+  <section id="welcome" class="relative mt-20">
+    <div class="container flex flex-col-reverse lg:flex-row gap-12 lg:mt-20">
       <!-- Contect -->
       <div class="flex flex-1 flex-col items-center lg:items-start">
         <h2

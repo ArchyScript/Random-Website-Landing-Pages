@@ -7,6 +7,9 @@ module.exports = {
                 'main-color': 'green',
                 'text-color': 'blue',
                 'test-color': 'red',
+                'mysqr-light': '#FDF8F4',
+                'mysqr-main': '#ff6501',
+                'mysqr-semi-light': '#FBF2EB',
             },
         },
         container: {

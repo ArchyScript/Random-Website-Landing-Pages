@@ -14,4 +14,14 @@
 .btn-white-bg {
   @apply bg-white text-black hover:bg-gray-800 hover:text-gray-200;
 }
+
+.mysqr-btn {
+  @apply rounded-full shadow-md px-6 py-2 transition duration-300;
+}
+.mysqr-btn-black-bg {
+  @apply bg-gray-800 text-white hover:bg-mysqr-main;
+}
+.mysqr-btn-no-bg {
+  @apply text-gray-800 hover:bg-mysqr-main hover:text-white;
+}
 </style>

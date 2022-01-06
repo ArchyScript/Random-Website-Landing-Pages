@@ -4,8 +4,12 @@ import Home from '../views/Home.vue'
 // Routes
 const LandingPage = () =>
     import ('@/components/LandingPage/Main.vue')
-const SquareroofLandingPage = () =>
-    import ('@/components/SquareroofLandingPage/Main.vue')
+const CitonhubLandingPage = () =>
+    import ('@/components/CitonhubLandingPage/Main.vue')
+const StranerdLandingPage = () =>
+    import ('@/components/StranerdLandingPage/Main.vue')
+const MySquareroofLandingPage = () =>
+    import ('@/components/MySquareroofLandingPage/Main.vue')
 
 const routes = [{
         path: '/',
@@ -18,9 +22,19 @@ const routes = [{
         component: LandingPage,
     },
     {
-        path: '/squareroof',
-        name: 'SquareroofLandingPage',
-        component: SquareroofLandingPage,
+        path: '/mysquareroof',
+        name: 'MySquareroofLandingPage',
+        component: MySquareroofLandingPage,
+    },
+    {
+        path: '/citonhub',
+        name: 'CitonhubLandingPage',
+        component: CitonhubLandingPage,
+    },
+    {
+        path: '/stranerd',
+        name: 'StranerdLandingPage',
+        component: StranerdLandingPage,
     },
     {
         path: '/about',
