@@ -1,12 +1,10 @@
 <template>
   <!-- Welcome Page -->
-  <section id="welcome" class="relative pt-20">
-    <div
-      class="container flex items-center lg:mt-8 sm:w-3/4 lg:w-2/4 mx-auto px-2"
-    >
+  <section id="welcome" class="relative pt-28">
+    <div class="container flex flex-col items-center px-2">
       <!-- Contect -->
       <div
-        class="flex flex-1 flex-col items-center justify-center lg:items-start"
+        class="flex flex-1 flex-col items-center justify-center lg:mt-8 sm:w-3/4 lg:w-7/12 mx-auto lg:items-start"
       >
         <h1
           class="text-gray-800 text-3xl leading-loose mx-auto md:text-4xl lg:text-5xl font-bold text-center lg:text-left mb-8"
@@ -34,6 +32,14 @@
             Get Started
           </button>
         </div>
+      </div>
+
+      <div class="w-full h-3/4 mt-16">
+        <img
+          class="flex justify-center items-center w-full mx-auto p-2 bg-white"
+          :src="require('@/assets/mysquareroof/squareroof3.svg')"
+          alt=""
+        />
       </div>
     </div>
   </section>

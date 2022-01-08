@@ -34,25 +34,24 @@
         </div>
 
         <div class="flex flex-1 flex-wrap justify-between">
-          <div v-for="x in 3" :key="x" class="flex flex-col">
-            <h4
-              class="block text-mysqr-dark-light mb-4 font-medium capitalized"
-            >
-              Quick Links
-            </h4>
-
+          <div v-for="footerLink in footerLinks" :key="footerLink">
             <div class="flex flex-col">
-              <span class="text-font-normal py-1 mb-1 cursor-pointer">
-                <a href="#contact">Link 1</a>
-              </span>
+              <h4
+                class="block text-mysqr-dark-light mb-4 font-medium capitalized"
+              >
+                {{ footerLink.title }}
+              </h4>
 
-              <span class="text-font-normal py-1 mb-1 cursor-pointer">
-                <a href="#contact">Link 2</a>
-              </span>
-
-              <span class="text-font-normal py-1 mb-1 cursor-pointer">
-                <a href="#contact">Link 3</a>
-              </span>
+              <div class="flex flex-col">
+                <div
+                  v-for="footerSubLink in footerLink.subLinks"
+                  :key="footerSubLink"
+                >
+                  <span class="text-font-normal py-1 mb-1 cursor-pointer">
+                    <a href="#contact">{{ footerSubLink.title }}</a>
+                  </span>
+                </div>
+              </div>
             </div>
           </div>
         </div>
@@ -71,9 +70,43 @@ import { ref } from 'vue'
 export default {
   setup() {
     const tellMe = ref('tell me')
+    const footerLinks = ref([
+      {
+        title: 'Quick Links',
+        subLinks: [
+          {
+            title: 'Citonhub',
+            route: '/citonhub',
+          },
+        ],
+      },
+      {
+        title: 'Nav',
+        subLinks: [
+          {
+            title: 'Citonhub',
+            route: '/citonhub',
+          },
+        ],
+      },
+      {
+        title: 'Quick Links',
+        subLinks: [
+          {
+            title: 'Citonhub',
+            route: '/citonhub',
+          },
+          {
+            title: 'Tech',
+            route: '/tech',
+          },
+        ],
+      },
+    ])
 
     return {
       tellMe,
+      footerLinks,
     }
   },
 }
