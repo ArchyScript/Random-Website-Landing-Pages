@@ -8,6 +8,7 @@
     "lint": "vue-cli-service lint"
   },
   "dependencies": {
+    "@mathieustan/vue-intercom": "^0.0.7",
     "autoprefixer": "^9.8.8",
     "axios": "^0.24.0",
     "core-js": "^3.6.5",

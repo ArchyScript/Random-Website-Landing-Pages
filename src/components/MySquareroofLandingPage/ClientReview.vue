@@ -25,11 +25,11 @@
         </div>
       </div>
 
-      <div class="col-span-2 grid grid-cols-2 gap-4">
+      <div class="col-span-2 grid grid-cols-2 gap-6">
         <div
           v-for="x in 6"
           :key="x"
-          class="rounded-xl bg-mysqr-semi-light flex flex-col justify-center p-2"
+          class="rounded-2xl bg-mysqr-semi-light flex flex-col justify-center px-8 py-6"
         >
           <p class="text-gray-600 text-lg font-light mb-4">
             Before Squareroof, real estate was unattainable for me. I love the
@@ -38,11 +38,19 @@
 
           <div class="flex flex-col mt-3">
             <div class="flex p-1 my-1 justify-center items-center">
-              <span></span>
+              <span>
+                <img
+                  :src="require('@/assets/mysquareroof/quote.svg')"
+                  alt="logo"
+                  class="h-10 w-10 mr-2 p-1 rounded-full bg-white shadow-xs"
+                />
+              </span>
 
-              <div class="flex flex-col flex-1 font-semibold mx-2">
-                <span class="font-semibold font-lg">Olakunle Ojo</span>
-                <span class="font-light font-sm">Olakunle Ojo</span>
+              <div
+                class="flex flex-col flex-1 font-semibold mx-2 text-mysqr-dark-dark"
+              >
+                <span class="font-semibold font-sm">Olakunle Ojo</span>
+                <span class="font-light font-xs">Developer</span>
               </div>
             </div>
           </div>

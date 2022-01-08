@@ -10,6 +10,8 @@ module.exports = {
                 'mysqr-light': '#FDF8F4',
                 'mysqr-main': '#ff6501',
                 'mysqr-semi-light': '#FAE6D6',
+                'mysqr-dark-dark': '#0C1D37',
+                'mysqr-dark-light': '#B3BFD1',
             },
         },
         container: {

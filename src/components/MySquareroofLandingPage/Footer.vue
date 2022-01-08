@@ -1,26 +1,65 @@
 <template>
   <!-- Footer -->
-  <footer id="footer" class="bg-gray-800 text-gray-200 py-5">
-    <div class="container flex flex-col md:flex-row items-center">
-      <div
-        class="flex flex-1 flex-wrap items-center justify-center md:justify-start gap-12"
-      >
-        <img src="" alt="logo" />
-        <ul class="flex gap-12 flex-wrap text-xs md:text-md uppercase">
-          <li class="cursor-pointer"><a href="#">Features</a></li>
-          <li class="cursor-pointer"><a href="#">Pricing</a></li>
-          <li class="cursor-pointer"><a href="#">Contact</a></li>
-        </ul>
+  <footer id="footer" class="mt-16">
+    <div class="container">
+      <div class="flex p-10">
+        <div class="flex flex-1 flex-col">
+          <div class="flex justify-between items-center">
+            <img
+              :src="require('@/assets/mysquareroof/squareroof2.png')"
+              alt="logo"
+              class="h-6 w-auto mb-6"
+            />
+          </div>
+
+          <div class="flex flex-col mb-6">
+            <h4 class="text-gray-500 mb-1 font-medium">Lagos</h4>
+            <span class="text-graay-800 font-normal">
+              ‍11b Fatai Idowu Arobieke, Lekki Ph 1,
+            </span>
+            <span class="text-graay-800 font-normal">
+              Lagos, Nigeria.
+            </span>
+          </div>
+
+          <div class="flex flex-col mb-6">
+            <h4 class="text-gray-500 mb-1 font-medium">Maryland</h4>
+            <span class="text-graay-800 font-normal">
+              ‍11b Fatai Idowu Arobieke, Lekki Ph 1,
+            </span>
+            <span class="text-graay-800 font-normal">
+              Lagos, Nigeria.
+            </span>
+          </div>
+        </div>
+
+        <div class="flex flex-1 flex-wrap justify-between">
+          <div v-for="x in 3" :key="x" class="flex flex-col">
+            <h4
+              class="block text-mysqr-dark-light mb-4 font-medium capitalized"
+            >
+              Quick Links
+            </h4>
+
+            <div class="flex flex-col">
+              <span class="text-font-normal py-1 mb-1 cursor-pointer">
+                <a href="#contact">Link 1</a>
+              </span>
+
+              <span class="text-font-normal py-1 mb-1 cursor-pointer">
+                <a href="#contact">Link 2</a>
+              </span>
+
+              <span class="text-font-normal py-1 mb-1 cursor-pointer">
+                <a href="#contact">Link 3</a>
+              </span>
+            </div>
+          </div>
+        </div>
       </div>
 
-      <div
-        class="flex gap-10 mt-12 text-xs flex-wrap justify-center items-center md:text-md md:mt-0"
-      >
-        <span class="cursor-pointer fa fa-github"></span>
-        <span class="cursor-pointer fa fa-twitter"></span>
-        <span class="cursor-pointer fa fa-youtube-play"></span>
-        <span class="cursor-pointer fa fa-instagram"></span>
-        <span class="cursor-pointer fa fa-facebook-square"></span>
+      <div class="py-2 px-10">
+        <p class="mb-10 py-2 text-sm text-gray-500">&copy; 2022 CeedCap.</p>
       </div>
     </div>
   </footer>

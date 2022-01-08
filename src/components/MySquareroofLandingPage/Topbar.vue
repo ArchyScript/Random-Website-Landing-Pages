@@ -28,13 +28,15 @@
         </li>
       </ul>
 
-      <div class="hidden md:flex flex- 1 items-center">
-        <button class="mysqr-btn mysqr-btn-no-bg mx-2">
+      <div class="hidden md:flex flex- 1 text-sm items-center">
+        <button
+          class="mysqr-btn mysqr-btn-no-bg mx-2 hover:text-mysqr-main hover:shadow-xs"
+        >
           Signup
         </button>
 
         <button
-          class="mysqr-btn mysqr-btn-hover-black-bg border-gray-800 hover:border-0 shadow-md mx-2"
+          class="mysqr-btn mysqr-btn-hover-black-bg border-2 border-mysqr-dark-dark hover:border-0 hover:shadow-md mx-2"
         >
           Login
         </button>

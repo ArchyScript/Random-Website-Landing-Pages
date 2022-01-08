@@ -30,15 +30,20 @@
         </p>
 
         <div class="flex flex-col mt-3 text-gray-700">
-          <div
-            v-for="x in 3"
-            :key="x"
-            class="flex p-1 my-1 justify-center items-center"
-          >
-            <span></span>
-            <span class="flex flex-1 font-semibold mx-2">
-              A SEC licensed trustee
-            </span>
+          <div v-for="x in 3" :key="x" class="mb-1 text-sm">
+            <div class="flex p-1 items-center">
+              <span>
+                <img
+                  :src="require('@/assets/mysquareroof/check.svg')"
+                  alt="logo"
+                  class="h-6 w-6 mr-2 p-1 rounded-full bg-white shadow-xs"
+                />
+              </span>
+
+              <span class="flex flex-1 font-medium mx-2">
+                A SEC licensed trustee
+              </span>
+            </div>
           </div>
         </div>
       </div>

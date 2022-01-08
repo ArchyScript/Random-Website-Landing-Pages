@@ -964,6 +964,11 @@
     cssnano-preset-default "^4.0.0"
     postcss "^7.0.0"
 
+"@mathieustan/vue-intercom@^0.0.7":
+  version "0.0.7"
+  resolved "https://registry.yarnpkg.com/@mathieustan/vue-intercom/-/vue-intercom-0.0.7.tgz#6f562347e6d73390e9ecb3841d1d4435c792959f"
+  integrity sha512-9uKAugjl8Xv64Kr22EHfuiY7EkGFJBU65blTFK/mZ5bDEnW5sG8rtqU6I7rSTsEvaD8c4hct1ougTrriEK3e3g==
+
 "@mrmlnc/readdir-enhanced@^2.2.1":
   version "2.2.1"
   resolved "https://registry.npm.taobao.org/@mrmlnc/readdir-enhanced/download/@mrmlnc/readdir-enhanced-2.2.1.tgz"
