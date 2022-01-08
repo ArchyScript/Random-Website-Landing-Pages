@@ -9,7 +9,7 @@ module.exports = {
                 'test-color': 'red',
                 'mysqr-light': '#FDF8F4',
                 'mysqr-main': '#ff6501',
-                'mysqr-semi-light': '#FBF2EB',
+                'mysqr-semi-light': '#FAE6D6',
             },
         },
         container: {

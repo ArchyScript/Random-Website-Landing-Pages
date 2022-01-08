@@ -1,0 +1,61 @@
+<template>
+  <!-- Welcome Page -->
+  <section id="details" class="relative mt-24">
+    <div class="container grid grid-cols-3 lg:mt-8 gap-6 mx-auto px-2">
+      <div class="col-span-2 flex flex-1 relative">
+        <img
+          class="flex justify-center items-center mx-auto p-2 bg-white"
+          :src="require('@/assets/mysquareroof/squareroof3.svg')"
+          alt=""
+        />
+      </div>
+
+      <!-- Contect -->
+      <div class="col-span-1 flex flex-col items-center lg:items-start">
+        <h1
+          class="text-gray-800 text-2xl leading-loose mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left mb-8"
+        >
+          We ensure your ownership is well
+          <span
+            class="test-mysqr-main items-center bg-mysqr-semi-light rounded-lg px-1"
+          >
+            protected
+          </span>
+        </h1>
+
+        <p class="text-gray-600 text-lg mb-6">
+          We follow a transparent and simplified structure that ensures your
+          share of ownership is managed and protected by our institutional
+          partners that include:
+        </p>
+
+        <div class="flex flex-col mt-3 text-gray-700">
+          <div
+            v-for="x in 3"
+            :key="x"
+            class="flex p-1 my-1 justify-center items-center"
+          >
+            <span></span>
+            <span class="flex flex-1 font-semibold mx-2">
+              A SEC licensed trustee
+            </span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+</template>
+
+<script>
+import { ref } from 'vue'
+
+export default {
+  setup() {
+    const test = ref('test')
+
+    return {
+      test,
+    }
+  },
+}
+</script>

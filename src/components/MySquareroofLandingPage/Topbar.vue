@@ -3,27 +3,41 @@
     class="flex items-center text-gray-800 bg-mysqr-light shadow-lg fixed top-0 inset-x-0 z-50 h-16"
   >
     <nav class="container flex justify-between items-center py-4">
-      <div class="py-1"><img src="" alt="log" /></div>
+      <div class="py-1">
+        <img
+          class="h-5 cursor-pointer"
+          :src="require('@/assets/mysquareroof/squareroof2.png')"
+          alt="log"
+        />
+      </div>
 
       <ul
-        class="hidden sm:flex flex-1 justify-center items-center gap-12 text-sm"
+        class="hidden sm:flex flex-1 flex-end lg justify-center items-center gap-12 text-sm"
       >
         <li class="cursor-pointer text-gray-800 hover:text-mysqr-main">
-          <a href="#welcome">Home</a>
+          <a href="#welcome">How it Works</a>
         </li>
         <li class="cursor-pointer text-gray-800 hover:text-mysqr-main">
-          <a href="#features">Features</a>
+          <a href="#features">Learn</a>
         </li>
         <li class="cursor-pointer text-gray-800 hover:text-mysqr-main">
-          <a href="#downloads">Downloads</a>
+          <a href="#downloads">About</a>
         </li>
-
-        <!-- <button class="btn btn-black-bg">Test 2</button> -->
+        <li class="cursor-pointer text-gray-800 hover:text-mysqr-main">
+          <a href="#downloads">Contact</a>
+        </li>
       </ul>
 
       <div class="hidden md:flex flex- 1 items-center">
-        <button class="mysqr-btn mysqr-btn-no-bg mx-2">Signup</button>
-        <button class="mysqr-btn mysqr-btn-black-bg mx-2">Login</button>
+        <button class="mysqr-btn mysqr-btn-no-bg mx-2">
+          Signup
+        </button>
+
+        <button
+          class="mysqr-btn mysqr-btn-hover-black-bg border-gray-800 hover:border-0 shadow-md mx-2"
+        >
+          Login
+        </button>
       </div>
 
       <!-- Mebu dropodown -->
