@@ -35,7 +35,7 @@
 
         <div class="flex flex-1 flex-wrap justify-between">
           <div v-for="footerLink in footerLinks" :key="footerLink">
-            <div class="flex flex-col">
+            <div class="flex flex-col mb-4">
               <h4
                 class="block text-mysqr-dark-light mb-4 font-medium capitalized"
               >

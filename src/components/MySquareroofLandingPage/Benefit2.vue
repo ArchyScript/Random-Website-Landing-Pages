@@ -2,7 +2,7 @@
   <!-- Welcome Page -->
   <section id="details" class="relative mt-24">
     <div class="container grid grid-cols-3 lg:mt-8 gap-6 mx-auto px-2">
-      <div class="col-span-2 flex flex-1 relative">
+      <div class="col-span-3 lg:col-span-2 hidden lg:flex flex-1 relative">
         <img
           class="flex justify-center items-center mx-auto p-2 bg-white"
           :src="require('@/assets/mysquareroof/squareroof3.svg')"
@@ -11,9 +11,11 @@
       </div>
 
       <!-- Contect -->
-      <div class="col-span-1 flex flex-col items-center lg:items-start">
+      <div
+        class="col-span-3 lg:col-span-1 flex flex-col items-center lg:items-start sm:w-3/4 lg:w-7/12 mx-auto"
+      >
         <h1
-          class="text-gray-800 text-2xl leading-loose mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left mb-8"
+          class="text-gray-800 text-2xl lg:leading-loose mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left mb-4 lg:mb-8"
         >
           We ensure your ownership is well
           <span
@@ -23,7 +25,7 @@
           </span>
         </h1>
 
-        <p class="text-gray-600 text-lg mb-6">
+        <p class="text-gray-600 text-center lg:text-left text-lg mb-3 lg:mb-6">
           We follow a transparent and simplified structure that ensures your
           share of ownership is managed and protected by our institutional
           partners that include:
@@ -46,6 +48,14 @@
             </div>
           </div>
         </div>
+      </div>
+
+      <div class="col-span-3 lg:col-span-2 flex flex-1 lg:hidden relative">
+        <img
+          class="flex justify-center items-center mx-auto p-2 bg-white"
+          :src="require('@/assets/mysquareroof/squareroof3.svg')"
+          alt=""
+        />
       </div>
     </div>
   </section>

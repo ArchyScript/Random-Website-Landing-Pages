@@ -5,15 +5,19 @@
       <!-- Contect -->
       <div class="flex flex-1 flex-col items-center justify-center">
         <h1
-          class="text-gray-800 text-3xl sm:w-3/4 lg:w-7/12 leading-loose mx-auto md:text-4xl lg:text-5xl font-medium text-center mb-8"
+          class="text-gray-800 text-3xl sm:w-3/4 lg:w-7/12 lg:leading-loose mx-auto md:text-4xl lg:text-5xl font-medium text-center mb-8"
         >
           Get Started in Real Estate
         </h1>
 
         <div
-          class="grid grid-cols-1 md:gid-cols-2 lg:grid-cols-4 mt-2 gap-6 justify-center text-center mx-auto"
+          class="grid grid-cols-4 mt-2 gap-6 justify-center text-center mx-auto"
         >
-          <div v-for="x in 4" :key="x" class="flex flex-col justify-center p-2">
+          <div
+            v-for="x in 4"
+            :key="x"
+            class="col-span-4 sm:col-span-2 lg:col-span-4 flex flex-col justify-center p-2"
+          >
             <img
               class="w-full mb-8 rounded-2xl shadow-md flex justify-center items-center mx-auto p-5 bg-white"
               :src="require('@/assets/mysquareroof/hand-pick.svg')"

@@ -7,7 +7,7 @@
         class="flex flex-1 flex-col items-center justify-center lg:mt-8 sm:w-3/4 lg:w-7/12 mx-auto lg:items-start"
       >
         <h1
-          class="text-gray-800 text-3xl leading-loose mx-auto md:text-4xl lg:text-5xl font-bold text-center lg:text-left mb-8"
+          class="text-gray-800 text-3xl lg:leading-loose mx-auto md:text-4xl lg:text-5xl font-bold text-center lg:text-left mb-4 lg:mb-8"
         >
           Africa's seamless property
           <span
@@ -18,7 +18,7 @@
           platform
         </h1>
 
-        <p class="text-gray-600 text-lg text-center mb-6">
+        <p class="text-gray-600 text-lg text-center mb-3 lg:mb-6">
           Squareroof is an exclusive platform to buy and own your share of
           income- producing real estate, right from your mobile phone or
           computer.

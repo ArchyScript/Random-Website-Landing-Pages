@@ -5,7 +5,9 @@
       class="container grid grid-cols-2 lg:mt-8 gap-6 mx-auto p-10 rounded-2xl bg-mysqr-dark-dark"
     >
       <!-- Contect -->
-      <div class="flex flex-col items-center lg:items-start">
+      <div
+        class="col-span-2 lg:col-span-1 flex flex-col items-center lg:items-start"
+      >
         <h1
           class="text-white text-2xl leading-loose mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left pr-4 mb-8"
         >
@@ -33,7 +35,7 @@
         </div>
       </div>
 
-      <div class="flex flex-1 relative">
+      <div class="col-span-2 lg:col-span-1 flex flex-1 relative">
         <img
           class="flex justify-center items-center mx-auto p-2"
           :src="require('@/assets/mysquareroof/squareroof-dark.svg')"

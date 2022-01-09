@@ -3,14 +3,16 @@
   <section id="details" class="relative mt-24">
     <div class="container grid grid-cols-3 lg:mt-8 gap-6 mx-auto px-2">
       <!-- Contect -->
-      <div class="col-span-1 flex flex-col items-center lg:items-start">
+      <div
+        class="col-span-3 lg:col-span-1 flex flex-col items-center lg:items-start sm:w-3/4 lg:w-full mx-auto"
+      >
         <h1
-          class="text-gray-800 text-2xl leading-loose mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left pr-4 mb-8"
+          class="text-gray-800 text-2xl lg:leading-loose mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left pr-4 mb-4 lg:mb-8"
         >
           What clients say about us
         </h1>
 
-        <p class="text-gray-600 text-lg mb-6">
+        <p class="text-gray-600 text-center lg:text-left text-lg mb-3 lg:mb-6">
           Squareroof is a modern property technology platform on a mission to
           simplify and make real estate affordable
         </p>
@@ -25,7 +27,9 @@
         </div>
       </div>
 
-      <div class="col-span-2 grid grid-cols-2 gap-6">
+      <div
+        class="col-span-3 lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6"
+      >
         <div
           v-for="x in 6"
           :key="x"

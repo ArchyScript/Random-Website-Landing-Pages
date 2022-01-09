@@ -4,15 +4,19 @@
       <!-- Contect -->
       <div class="flex flex-1 flex-col items-center justify-center">
         <h1
-          class="text-gray-800 text-3xl sm:w-3/4 lg:w-7/12 leading-loose mx-auto md:text-4xl lg:text-5xl font-medium text-center mb-6"
+          class="text-gray-800 text-3xl sm:w-3/4 lg:w-7/12 lg:leading-loose mx-auto md:text-4xl lg:text-5xl font-medium text-center mb-4 lg:mb-8"
         >
           How it Works
         </h1>
 
         <div
-          class="grid grid-cols-1 md:gid-cols-2 lg:grid-cols-3 gap-6 justify-center text-center mx-auto"
+          class="grid grid-cols-6 gap-6 justify-center items-center text-center mx-auto mb-3 lg:mb-6"
         >
-          <div v-for="x in 3" :key="x" class="flex flex-col justify-center p-3">
+          <div
+            v-for="x in 3"
+            :key="x"
+            class="col-span-6 sm:col-span-3 lg:col-span-2 flex flex-col justify-center p-3"
+          >
             <img
               class="h-8 w-8 lg:h-20 lg:w-20 mb-6 rounded-2xl shadow-md flex justify-center items-center mx-auto p-5 bg-white"
               :src="require('@/assets/mysquareroof/register.png')"
