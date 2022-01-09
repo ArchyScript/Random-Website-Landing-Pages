@@ -52,24 +52,28 @@ export default {
   setup() {
     const my_squareroof_descriptions = ref([
       {
-        title: 'Quick Links',
+        title: 'Hand Picked for You',
         image_url: require('@/assets/mysquareroof/hand-pick.svg'),
-        description: 'Test description lorem ipsum test',
+        description:
+          'Choose from a well-diversified portfolio of high-value properties',
       },
       {
-        title: 'Nav',
-        image_url: require('@/assets/mysquareroof/hand-pick.svg'),
-        description: 'Test description lorem ipsum test',
+        title: 'Own Your Share',
+        image_url: require('@/assets/mysquareroof/share.svg'),
+        description:
+          'Buy a minimum of one square foot per property to enjoy benefits',
       },
       {
-        title: 'Thhird Link Links',
-        image_url: require('@/assets/mysquareroof/hand-pick.svg'),
-        description: 'Test description lorem ipsum test',
+        title: 'Earn Rental Dividends',
+        image_url: require('@/assets/mysquareroof/rental-dividens.png'),
+        description:
+          'Each property rent is guaranteed to pay you regular income',
       },
       {
-        title: 'Nav',
-        image_url: require('@/assets/mysquareroof/hand-pick.svg'),
-        description: 'Test description lorem ipsum test',
+        title: 'Enjoy Capital Gains',
+        image_url: require('@/assets/mysquareroof/capital-gain.svg'),
+        description:
+          'Watch your money grow as the value of your property rises',
       },
     ])
 
