@@ -1,11 +1,11 @@
 <template>
   <!-- Welcome Page -->
-  <section id="welcome" class="relative mt-16">
+  <section id="get-started" class="relative mt-12 lg:mt-20 py-5 px-5 lg:px-15">
     <div class="container flex items-center lg:mt-8 mx-auto px-2">
       <!-- Contect -->
       <div class="flex flex-1 flex-col items-center justify-center">
         <h1
-          class="text-gray-800 text-3xl sm:w-3/4 lg:w-7/12 lg:leading-loose mx-auto md:text-4xl lg:text-5xl font-medium text-center mb-8"
+          class="text-gray-800 text-3xl sm:w-3/4 lg:w-7/12 mx-auto md:text-4xl lg:text-5xl font-medium text-center mb-4 lg:mb-8"
         >
           Get Started in Real Estate
         </h1>
@@ -19,18 +19,18 @@
             class="col-span-4 sm:col-span-2 lg:col-span-4 flex flex-col justify-center p-2"
           >
             <img
-              class="w-full mb-8 rounded-2xl shadow-md flex justify-center items-center mx-auto p-5 bg-white"
+              class="w-full mb-4 lg:mb-8 rounded-2xl shadow-md flex justify-center items-center mx-auto p-5 bg-white"
               :src="require('@/assets/mysquareroof/hand-pick.svg')"
               alt=""
             />
 
             <span
-              class="test-mysqr-main items-center self-center bg-mysqr-semi-light rounded-lg px-4 py-2 mb-4"
+              class="test-mysqr-main items-center self-center bg-mysqr-semi-light rounded-lg px-4 py-2 mb-2 lg:mb-4"
             >
               learn
             </span>
 
-            <p class="text-gray-600 text-2xl font-medium text-center mb-4">
+            <p class="text-gray-600 text-2xl font-medium text-center mb-2 sm:mb-0">
               Getting into Affordable Real Estate Investing
             </p>
           </div>

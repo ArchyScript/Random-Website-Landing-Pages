@@ -1,11 +1,11 @@
 <template>
   <!-- Welcome Page -->
-  <section id="welcome" class="relative mt-16">
-    <div class="container flex items-center lg:mt-8 mx-auto px-2">
+  <section id="welcome" class="relative mt-12 lg:mt-16">
+    <div class="container flex items-center lg:mt-8 mx-auto px-5 sm:px-2">
       <!-- Contect -->
       <div class="flex flex-1 flex-col items-center justify-center">
         <h1
-          class="text-gray-800 text-3xl sm:w-3/4 lg:w-7/12 lg:leading-loose mx-auto md:text-4xl lg:text-5xl font-medium text-center mb-4 lg:mb-8"
+          class="text-gray-800 text-3xl sm:w-3/4 lg:w-7/12 mx-auto md:text-4xl lg:text-5xl font-medium text-center mb-4 lg:mb-8"
         >
           Own your share of income producing properties
         </h1>
@@ -21,22 +21,22 @@
           class="grid grid-cols-4 mt-2 gap-6 justify-center text-center mx-auto"
         >
           <div
-            v-for="x in 4"
-            :key="x"
+            v-for="my_squareroof_description in my_squareroof_descriptions"
+            :key="my_squareroof_description"
             class="col-span-4 sm:col-span-2 lg:col-span-1 flex flex-col justify-center p-2"
           >
             <img
-              class="h-8 w-8 lg:h-20 lg:w-20 mb-6 rounded-2xl shadow-md flex justify-center items-center mx-auto p-5 bg-white"
-              :src="require('@/assets/mysquareroof/hand-pick.svg')"
+              class="w-full lg:h-20 lg:w-20 mb-4 rounded-2xl shadow-md flex justify-center items-center mx-auto p-5 bg-white"
+              :src="my_squareroof_description.image_url"
               alt=""
             />
 
-            <h3 class="w-full text-xl font-medium text-gray-700 mb-3">
-              Hand Picked for You
+            <h3 class="w-full text-xl font-medium text-gray-700 mb-2">
+              {{ my_squareroof_description.title }}
             </h3>
 
-            <p class="text-gray-600 text-sm text-center mb-4">
-              Choose from a well-diversified portfolio of high-value properties
+            <p class="text-gray-600 text-sm text-center mb-2 sm:mb-0">
+              {{ my_squareroof_description.description }}
             </p>
           </div>
         </div>
@@ -50,10 +50,31 @@ import { ref } from 'vue'
 
 export default {
   setup() {
-    const test = ref('test')
+    const my_squareroof_descriptions = ref([
+      {
+        title: 'Quick Links',
+        image_url: require('@/assets/mysquareroof/hand-pick.svg'),
+        description: 'Test description lorem ipsum test',
+      },
+      {
+        title: 'Nav',
+        image_url: require('@/assets/mysquareroof/hand-pick.svg'),
+        description: 'Test description lorem ipsum test',
+      },
+      {
+        title: 'Thhird Link Links',
+        image_url: require('@/assets/mysquareroof/hand-pick.svg'),
+        description: 'Test description lorem ipsum test',
+      },
+      {
+        title: 'Nav',
+        image_url: require('@/assets/mysquareroof/hand-pick.svg'),
+        description: 'Test description lorem ipsum test',
+      },
+    ])
 
     return {
-      test,
+      my_squareroof_descriptions,
     }
   },
 }

@@ -1,13 +1,13 @@
 <template>
   <!-- Welcome Page -->
-  <section id="details" class="relative mt-24">
+  <section id="details" class="relative mt-12 lg:mt-20 py-5 px-5 lg:px-15">
     <div class="container grid grid-cols-3 lg:mt-8 gap-6 mx-auto px-2">
       <!-- Contect -->
       <div
         class="col-span-3 lg:col-span-1 flex flex-col items-center lg:items-start sm:w-3/4 lg:w-full mx-auto"
       >
         <h1
-          class="text-gray-800 text-2xl lg:leading-loose mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left pr-4 mb-4 lg:mb-8"
+          class="text-gray-800 text-2xl mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left pr-4 mb-4 lg:mb-8"
         >
           What clients say about us
         </h1>
@@ -28,16 +28,15 @@
       </div>
 
       <div
-        class="col-span-3 lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6"
+        class="col-span-3 lg:col-span-2 grid grid-cols-1 sm:grid-cols-2 gap-6 mt-2"
       >
         <div
-          v-for="x in 6"
-          :key="x"
+          v-for="client_review in client_reviews"
+          :key="client_review"
           class="rounded-2xl bg-mysqr-semi-light flex flex-col justify-center px-8 py-6"
         >
           <p class="text-gray-600 text-lg font-light mb-4">
-            Before Squareroof, real estate was unattainable for me. I love the
-            idea of being able to buy little by little according to my pocket
+            {{ client_review.review }}
           </p>
 
           <div class="flex flex-col mt-3">
@@ -53,8 +52,12 @@
               <div
                 class="flex flex-col flex-1 font-semibold mx-2 text-mysqr-dark-dark"
               >
-                <span class="font-semibold font-sm">Olakunle Ojo</span>
-                <span class="font-light font-xs">Developer</span>
+                <span class="font-semibold font-sm">
+                  {{ client_review.name }}
+                </span>
+                <span class="font-light font-xs">
+                  {{ client_review.stack }}
+                </span>
               </div>
             </div>
           </div>
@@ -69,10 +72,35 @@ import { ref } from 'vue'
 
 export default {
   setup() {
-    const test = ref('test')
+    const client_reviews = ref([
+      {
+        name: 'Test Name',
+        stack: 'Developer',
+        review:
+          'thiw idgeskj oshfs;fsyi;fjo;eges/;fhsflsfgflsfgf   kjfkjfke.sgwel;uevdlu  idiudu',
+      },
+      {
+        name: 'Test Name',
+        stack: 'Developer',
+        review:
+          'thiw idgeskj oshfs;fsyi;fjo;eges/;fhsflsfgflsfgf   kjfkjfke.sgwel;uevdlu  idiudu',
+      },
+      {
+        name: 'Test Name',
+        stack: 'Developer',
+        review:
+          'thiw idgeskj oshfs;fsyi;fjo;eges/;fhsflsfgflsfgf   kjfkjfke.sgwel;uevdlu  idiudu',
+      },
+      {
+        name: 'Test Name',
+        stack: 'UI/UX Designer',
+        review:
+          'thiw idgeskj oshfs;fsyi;fjo;eges/;fhsflsfgflsfgf   kjfkjfke.sgwel;uevdlu  idiudu',
+      },
+    ])
 
     return {
-      test,
+      client_reviews,
     }
   },
 }

@@ -1,6 +1,6 @@
 <template>
   <!-- Welcome Page -->
-  <section id="details" class="relative mt-24">
+  <section id="details" class="relative mt-12 lg:mt-20">
     <div class="container grid grid-cols-3 lg:mt-8 gap-6 mx-auto px-2">
       <div class="col-span-3 lg:col-span-2 hidden lg:flex flex-1 relative">
         <img
@@ -12,10 +12,10 @@
 
       <!-- Contect -->
       <div
-        class="col-span-3 lg:col-span-1 flex flex-col items-center lg:items-start sm:w-3/4 lg:w-7/12 mx-auto"
+        class="col-span-3 lg:col-span-1 flex flex-col items-center lg:items-start sm:w-3/4 lg:w-full mx-auto px-5 sm:px-0"
       >
         <h1
-          class="text-gray-800 text-2xl lg:leading-loose mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left mb-4 lg:mb-8"
+          class="text-gray-800 text-2xl mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left mb-4 lg:mb-8"
         >
           We ensure your ownership is well
           <span
@@ -50,7 +50,7 @@
         </div>
       </div>
 
-      <div class="col-span-3 lg:col-span-2 flex flex-1 lg:hidden relative">
+      <div class="col-span-3 lg:col-span-2 flex flex-1 lg:hidden relative mt-2">
         <img
           class="flex justify-center items-center mx-auto p-2 bg-white"
           :src="require('@/assets/mysquareroof/squareroof3.svg')"

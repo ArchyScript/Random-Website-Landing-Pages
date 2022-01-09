@@ -4,10 +4,10 @@
     <div class="container flex flex-col items-center px-2">
       <!-- Contect -->
       <div
-        class="flex flex-1 flex-col items-center justify-center lg:mt-8 sm:w-3/4 lg:w-7/12 mx-auto lg:items-start"
+        class="flex flex-1 flex-col items-center justify-center lg:mt-8 sm:w-3/4 lg:w-7/12 mx-auto lg:items-start px-5 sm:px-0"
       >
         <h1
-          class="text-gray-800 text-3xl lg:leading-loose mx-auto md:text-4xl lg:text-5xl font-bold text-center lg:text-left mb-4 lg:mb-8"
+          class="text-gray-800 text-3xl se mx-auto md:text-4xl lg:text-5xl font-bold text-center lg:text-left mb-4 lg:mb-8"
         >
           Africa's seamless property
           <span
@@ -34,7 +34,7 @@
         </div>
       </div>
 
-      <div class="w-full h-3/4 mt-16">
+      <div class="w-full h-3/4 mt-10 lg:mt-16">
         <img
           class="flex justify-center items-center w-full mx-auto p-2 bg-white"
           :src="require('@/assets/mysquareroof/squareroof3.svg')"
