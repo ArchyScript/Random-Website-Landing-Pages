@@ -13,6 +13,7 @@ module.exports = {
                 'mysqr-dark-dark': '#0C1D37',
                 'mysqr-dark-light': '#B3BFD1',
             },
+            animation: { 'spin-slow': 'spin 10s linear infinite' },
         },
         container: {
             center: true,

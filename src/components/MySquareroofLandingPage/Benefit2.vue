@@ -32,7 +32,7 @@
         </p>
 
         <div class="flex flex-col mt-3 text-gray-700">
-          <div v-for="x in 3" :key="x" class="mb-1 text-sm">
+          <div v-for="benefit in benefits" :key="benefit" class="mb-1 text-sm">
             <div class="flex p-1 items-center">
               <span>
                 <img
@@ -43,7 +43,7 @@
               </span>
 
               <span class="flex flex-1 font-medium mx-2">
-                A SEC licensed trustee
+               {{benefit.title}}
               </span>
             </div>
           </div>
@@ -66,10 +66,20 @@ import { ref } from 'vue'
 
 export default {
   setup() {
-    const test = ref('test')
+    const benefits = ref([
+      {
+        title: 'A SEC licensed trustee',
+      },
+      {
+        title: 'A professional property manager',
+      },
+      {
+        title: 'A chartered  estate surveyor and valuer',
+      },
+    ])
 
     return {
-      test,
+      benefits,
     }
   },
 }

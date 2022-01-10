@@ -15,23 +15,17 @@
           <div
             class="flex flex-col sm:flex-row lg:flex-col gap-6 justify-between sm:items-center"
           >
-            <div class="flex flex-1 flex-col mb-3 lg:mb-6">
-              <h4 class="text-gray-500 mb-1 font-medium">Lagos</h4>
-              <span class="text-graay-800 font-normal">
-                ‍11b Fatai Idowu Arobieke, Lekki Ph 1,
-              </span>
-              <span class="text-graay-800 font-normal">
-                Lagos, Nigeria.
-              </span>
-            </div>
-
-            <div class="flex flex-1 flex-col mb-3 lg:mb-6">
-              <h4 class="text-gray-500 mb-1 font-medium">Maryland</h4>
-              <span class="text-graay-800 font-normal">
-                ‍11b Fatai Idowu Arobieke, Lekki Ph 1,
-              </span>
-              <span class="text-graay-800 font-normal">
-                Lagos, Nigeria.
+            <div
+              v-for="address_and_location in address_and_locations"
+              :key="address_and_location"
+              class="flex flex-1 flex-col mb-3 lg:mb-6 font-light text-gray-800"
+            >
+              <h4 class="text-gray-500 mb-1 font-medium">
+                {{ address_and_location.title }}
+              </h4>
+              <span class="">‍{{ address_and_location.address }}</span>
+              <span class="">
+                {{ address_and_location.location }}
               </span>
             </div>
           </div>
@@ -41,26 +35,27 @@
           class="col-span-2 md:col-span-1 flex flex-wrap justify-between gap-6"
         >
           <div
-            v-for="footerLink in footerLinks"
-            :key="footerLink"
+            v-for="footer_link in footer_links"
+            :key="footer_link"
             class="flex-1"
           >
             <div class="flex flex-col mb-4">
               <h4
-                class="block text-mysqr-dark-light mb-2 sm:mb-4 lg:md-6 font-medium capitalized"
+                class="block text-gray-500 mb-2 sm:mb-4 lg:md-6 font-medium capitalized"
               >
-                {{ footerLink.title }}
+                {{ footer_link.title }}
               </h4>
 
               <div class="flex flex-col">
-                <div
-                  v-for="footerSubLink in footerLink.subLinks"
-                  :key="footerSubLink"
+                <span
+                  v-for="footer_sub_link in footer_link.sub_links"
+                  :key="footer_sub_link"
+                  class="text-font-normal mb-1 cursor-pointer font-light text-gray-800 hover:text-mysqr-main"
                 >
-                  <span class="text-font-normal py-1 mb-1 cursor-pointer">
-                    <a href="#contact">{{ footerSubLink.title }}</a>
-                  </span>
-                </div>
+                  <a :href="footer_sub_link.link">
+                    {{ footer_sub_link.title }}
+                  </a>
+                </span>
               </div>
             </div>
           </div>
@@ -79,42 +74,76 @@ import { ref } from 'vue'
 
 export default {
   setup() {
-    const footerLinks = ref([
+    const address_and_locations = ref([
+      {
+        title: 'Lagos',
+        address: '11b Fatai Idowu Arobieke, Lekki Ph 1,',
+        location: 'Lagos, Nigeria.',
+      },
+      {
+        title: 'Maryland',
+        address: '9711 Washingtonian Boulevard,',
+        location: 'Maryland, 20878, USA.',
+      },
+    ])
+
+    const footer_links = ref([
       {
         title: 'Quick Links',
-        subLinks: [
+        sub_links: [
           {
-            title: 'Citonhub',
-            route: '/citonhub',
+            title: 'Learn',
+            link: 'https://www.mysquareroof.com/learn',
+          },
+          {
+            title: 'How it works',
+            link: 'https://www.mysquareroof.com/how-it-works',
+          },
+          {
+            title: 'Support',
+            link: 'https://www.mysquareroof.com/contact',
           },
         ],
       },
       {
-        title: 'Nav',
-        subLinks: [
+        title: 'Social',
+        sub_links: [
           {
-            title: 'Citonhub',
-            route: '/citonhub',
+            title: 'Facebook',
+            link: 'https://www.facebook.com/mysquareroof',
+          },
+          {
+            title: 'Instagram',
+            link: 'https://www.instagram.com/mysquareroof',
+          },
+          {
+            title: 'Twitter',
+            link: 'https://twitter.com/mysquareroof',
           },
         ],
       },
       {
-        title: 'Quick Links',
-        subLinks: [
+        title: 'Terms & Privacy',
+        sub_links: [
           {
-            title: 'Citonhub',
-            route: '/citonhub',
+            title: 'About',
+            link: 'https://www.mysquareroof.com/about',
           },
           {
-            title: 'Tech',
-            route: '/tech',
+            title: 'Privacy Policy',
+            link: 'https://www.mysquareroof.com/privacy',
+          },
+          {
+            title: 'Terms of Use',
+            link: 'https://www.mysquareroof.com/terms',
           },
         ],
       },
     ])
 
     return {
-      footerLinks,
+      footer_links,
+      address_and_locations,
     }
   },
 }

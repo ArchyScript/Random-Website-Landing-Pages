@@ -74,28 +74,40 @@ export default {
   setup() {
     const client_reviews = ref([
       {
-        name: 'Test Name',
-        stack: 'Developer',
+        name: 'Olakunle Ojo',
+        stack: 'Financial Accountant',
         review:
-          'thiw idgeskj oshfs;fsyi;fjo;eges/;fhsflsfgflsfgf   kjfkjfke.sgwel;uevdlu  idiudu',
+          'Before Squareroof, real estate was unattainable for me. I love the idea of being able to buy little by little according to my pocket',
       },
       {
-        name: 'Test Name',
-        stack: 'Developer',
+        name: 'Emeka Nduka',
+        stack: 'Executive Director',
         review:
-          'thiw idgeskj oshfs;fsyi;fjo;eges/;fhsflsfgflsfgf   kjfkjfke.sgwel;uevdlu  idiudu',
+          "I like that Squareroof is putting a lot of effort to create a truly seamless experience for investing in real estate. The team's dedication is impressive",
       },
       {
-        name: 'Test Name',
-        stack: 'Developer',
+        name: 'Esosa Omonuwa',
+        stack: 'Investment Banker',
         review:
-          'thiw idgeskj oshfs;fsyi;fjo;eges/;fhsflsfgflsfgf   kjfkjfke.sgwel;uevdlu  idiudu',
+          'What Squareroof is doing is a game changer and is welcomed, considering how expensive real estate is for many young people.',
       },
       {
-        name: 'Test Name',
-        stack: 'UI/UX Designer',
+        name: 'Khalil hassan',
+        stack: 'Investor',
         review:
-          'thiw idgeskj oshfs;fsyi;fjo;eges/;fhsflsfgflsfgf   kjfkjfke.sgwel;uevdlu  idiudu',
+          "As an investor, it's a useful tool to diversify. I see Squareroof disrupting traditional real estate investment in a collaborative way.",
+      },
+      {
+        name: 'Esther Olushola ',
+        stack: 'Product Designer',
+        review:
+          'Eventually everyone realises that owning a piece of real estate is a real deal and its usually too late and unaffordable. Squareroof is a fresh approach',
+      },
+      {
+        name: 'Nedu Obi',
+        stack: 'Developer',
+        review:
+          'What Squareroof offers is a win-win solution for developers. It is a unique way to sell properties with the potential to increase housing supply. Kudos to the team.',
       },
     ])
 

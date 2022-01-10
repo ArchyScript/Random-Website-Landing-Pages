@@ -26,7 +26,7 @@
             class="col-span-4 sm:col-span-2 lg:col-span-1 flex flex-col justify-center p-2"
           >
             <img
-              class="w-full lg:h-20 lg:w-20 mb-4 rounded-2xl shadow-md flex justify-center items-center mx-auto p-5 bg-white"
+              class="h-20 w-20 lg:h-20 lg:w-20 mb-4 rounded-2xl shadow-md flex justify-center items-center mx-auto p-5 bg-white"
               :src="my_squareroof_description.image_url"
               alt=""
             />

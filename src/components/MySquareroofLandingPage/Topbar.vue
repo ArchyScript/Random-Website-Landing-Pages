@@ -5,7 +5,7 @@
   >
     <div class="container flex flex-col">
       <nav class="flex justify-between items-center py-3">
-        <div class="py-1">
+        <div class="py-1 mx-2">
           <img
             class="h-5 cursor-pointer"
             :src="require('@/assets/mysquareroof/squareroof2.png')"
@@ -16,17 +16,12 @@
         <ul
           class="hidden md:flex flex-1 flex-end justify-center items-center md:gap-8 lg:gap-12 text-sm"
         >
-          <li class="cursor-pointer text-gray-800 hover:text-mysqr-main">
-            <a href="#welcome">How it Works</a>
-          </li>
-          <li class="cursor-pointer text-gray-800 hover:text-mysqr-main">
-            <a href="#features">Learn</a>
-          </li>
-          <li class="cursor-pointer text-gray-800 hover:text-mysqr-main">
-            <a href="#downloads">About</a>
-          </li>
-          <li class="cursor-pointer text-gray-800 hover:text-mysqr-main">
-            <a href="#downloads">Contact</a>
+          <li
+            v-for="navbar_link in navbar_links"
+            :key="navbar_link"
+            class="cursor-pointer text-gray-800 hover:text-mysqr-main"
+          >
+            <a :href="navbar_link.liink">{{ navbar_link.title }}</a>
           </li>
         </ul>
 
@@ -56,26 +51,11 @@
         :class="navbarTogglerIsOpenBoolean ? 'flex' : 'hidden'"
         class="my-2 py-2 text-sm flex-col md:hidden"
       >
-        <div>
+        <div v-for="navbar_link in navbar_links" :key="navbar_link">
           <span
             class="block text-center py-2 mb-1 cursor-pointer text-gray-800 hover:text-mysqr-main"
           >
-            How it Works
-          </span>
-          <span
-            class="block text-center py-2 mb-1 cursor-pointer text-gray-800 hover:text-mysqr-main"
-          >
-            Learn
-          </span>
-          <span
-            class="block text-center py-2 mb-1 cursor-pointer text-gray-800 hover:text-mysqr-main"
-          >
-            About
-          </span>
-          <span
-            class="block text-center py-2 mb-1 cursor-pointer text-gray-800 hover:text-mysqr-main"
-          >
-            Contact
+            <a :href="navbar_link.link">{{ navbar_link.title }}</a>
           </span>
         </div>
 
@@ -123,9 +103,29 @@ export default {
       }
     }
 
+    const navbar_links = ref([
+      {
+        title: 'How it works',
+        link: 'https://www.mysquareroof.com/how-it-works',
+      },
+      {
+        title: 'Learn',
+        link: 'https://www.mysquareroof.com/learn',
+      },
+      {
+        title: 'About',
+        link: 'https://www.mysquareroof.com/about',
+      },
+      {
+        title: 'Contact',
+        link: 'https://www.mysquareroof.com/contact',
+      },
+    ])
+
     return {
       scrollShadowBoolean,
       navbarTogglerIsOpenBoolean,
+      navbar_links,
     }
   },
 }
