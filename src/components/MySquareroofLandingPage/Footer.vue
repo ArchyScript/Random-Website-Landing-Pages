@@ -13,18 +13,20 @@
           </div>
 
           <div
-            class="flex flex-col sm:flex-row lg:flex-col gap-6 justify-between sm:items-center"
+            class="flex flex-col sm:flex-row lg:flex-col gap-6 justify-between sm:items-center lg:items-start"
           >
             <div
               v-for="address_and_location in address_and_locations"
               :key="address_and_location"
-              class="flex flex-1 flex-col mb-3 lg:mb-6 font-light text-gray-800"
+              class="flex flex-1 flex-col mb-3 lg:mb-4 text-mysqr-dark-dark"
             >
-              <h4 class="text-gray-500 mb-1 font-medium">
+              <h4 class="mb-1 font-medium text-opacity-50">
                 {{ address_and_location.title }}
               </h4>
-              <span class="">‍{{ address_and_location.address }}</span>
-              <span class="">
+              <span class="text-sm font-light">
+                ‍{{ address_and_location.address }}
+              </span>
+              <span class="text-sm font-normal">
                 {{ address_and_location.location }}
               </span>
             </div>
@@ -41,7 +43,7 @@
           >
             <div class="flex flex-col mb-4">
               <h4
-                class="block text-gray-500 mb-2 sm:mb-4 lg:md-6 font-medium capitalized"
+                class="block text-mysqr-dark-dark mb-2 sm:mb-4 lg:md-6 font-medium capitalized"
               >
                 {{ footer_link.title }}
               </h4>
@@ -50,7 +52,7 @@
                 <span
                   v-for="footer_sub_link in footer_link.sub_links"
                   :key="footer_sub_link"
-                  class="text-font-normal mb-1 cursor-pointer font-light text-gray-800 hover:text-mysqr-main"
+                  class="text-font-normal mb-1 cursor-pointer font-light text-mysqr-dark-dark text-sm hover:text-mysqr-main"
                 >
                   <a :href="footer_sub_link.link">
                     {{ footer_sub_link.title }}
@@ -63,7 +65,9 @@
       </div>
 
       <div class="py-2 px-5">
-        <p class="mb-10 py-2 text-sm text-gray-500">&copy; 2022 CeedCap.</p>
+        <p class="mb-10 py-2 lg:px-5 text-sm font-light text-mysqr-dark-dark">
+          &copy; 2022 CeedCap.
+        </p>
       </div>
     </div>
   </footer>

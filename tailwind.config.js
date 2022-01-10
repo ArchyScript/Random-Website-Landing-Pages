@@ -11,7 +11,7 @@ module.exports = {
                 'mysqr-main': '#ff6501',
                 'mysqr-semi-light': '#FAE6D6',
                 'mysqr-dark-dark': '#0C1D37',
-                'mysqr-dark-light': '#B3BFD1',
+                'mysqr-gray': '#D4D2D4',
             },
             animation: { 'spin-slow': 'spin 10s linear infinite' },
         },

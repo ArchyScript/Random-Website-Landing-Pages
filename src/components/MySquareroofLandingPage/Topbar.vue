@@ -6,11 +6,13 @@
     <div class="container flex flex-col">
       <nav class="flex justify-between items-center py-3">
         <div class="py-1 mx-2">
-          <img
-            class="h-5 cursor-pointer"
-            :src="require('@/assets/mysquareroof/squareroof2.png')"
-            alt="logo"
-          />
+          <a href="mysquareroof">
+            <img
+              class="h-5 cursor-pointer"
+              :src="require('@/assets/mysquareroof/squareroof2.png')"
+              alt="logo"
+            />
+          </a>
         </div>
 
         <ul
@@ -19,9 +21,14 @@
           <li
             v-for="navbar_link in navbar_links"
             :key="navbar_link"
-            class="cursor-pointer text-gray-800 hover:text-mysqr-main"
+            class="cursor-pointer"
           >
-            <a :href="navbar_link.liink">{{ navbar_link.title }}</a>
+            <a
+              :href="navbar_link.liink"
+              class="cursor-pointer text-gray-800 hover:text-mysqr-main"
+            >
+              {{ navbar_link.title }}
+            </a>
           </li>
         </ul>
 

@@ -1,10 +1,10 @@
 <template>
-  <section id="how-it-works" class="relative mt-12 lg:mt-20 py-5 px-5 lg:px-15">
+  <section id="how-it-works" class="relative mt-16 lg:mt-24 py-5 px-5 lg:px-15">
     <div class="container flex items-center lg:mt-8 mx-auto px-2">
       <!-- Contect -->
       <div class="flex flex-1 flex-col items-center justify-center">
         <h1
-          class="text-gray-800 text-3xl sm:w-3/4 lg:w-7/12 mx-auto md:text-4xl lg:text-5xl font-medium text-center mb-4 lg:mb-8 px-5 sm:px-0"
+          class="ttext-mysqr-dark-dark text-3xl sm:w-3/4 lg:w-7/12 mx-auto md:text-4xl lg:text-5xl font-medium text-center mb-4 lg:mb-8 px-5 sm:px-0"
         >
           How it Works
         </h1>
@@ -38,11 +38,13 @@
               alt=""
             />
 
-            <h3 class="w-full text-xl font-medium text-gray-700 mb-2">
+            <h3 class="w-full text-xl font-medium text-mysqr-dark-dark mb-2">
               {{ how_it_work.title }}
             </h3>
 
-            <p class="text-gray-600 text-sm text-center mb-2 sm:mb-0">
+            <p
+              class="text-mysqr-dark-dark font-light text-sm text-center mb-2 sm:mb-0"
+            >
               {{ how_it_work.how_it_works }}
             </p>
           </div>
@@ -141,9 +143,9 @@
         <div class="flex items-center justify-center text-center mx-auto mt-2">
           <button
             type="button"
-            class="mysqr-btn mysqr-btn-black-bg mysqr-btn-hover-main-bg py-3 px-6"
+            class="mysqr-btn mysqr-btn-dark-bg mysqr-btn-hover-main-bg lg:py-4 lg:px-10"
           >
-            Learn More
+            <a href="https://www.mysquareroof.com/how-it-works">Learn More</a>
           </button>
         </div>
       </div>

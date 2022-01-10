@@ -1,17 +1,17 @@
 <template>
   <!-- Welcome Page -->
-  <section id="welcome" class="relative mt-12 lg:mt-16">
+  <section id="welcome" class="relative mt-16 lg:mt-20">
     <div class="container flex items-center lg:mt-8 mx-auto px-5 sm:px-2">
       <!-- Contect -->
       <div class="flex flex-1 flex-col items-center justify-center">
         <h1
-          class="text-gray-800 text-3xl sm:w-3/4 lg:w-7/12 mx-auto md:text-4xl lg:text-5xl font-medium text-center mb-4 lg:mb-8"
+          class="text-mysqr-dark-dark text-3xl sm:w-3/4 lg:w-7/12 mx-auto md:text-4xl lg:text-5xl font-medium text-center mb-4 lg:mb-8"
         >
           Own your share of income producing properties
         </h1>
 
         <p
-          class="text-gray-600 sm:w-3/4 lg:w-2/4 text-lg text-center mb-3 lg:mb-6"
+          class="text-mysqr-dark-dark font-normal sm:w-3/4 lg:w-2/4 text-lg text-center mb-3 lg:mb-6"
         >
           Start investing in high-quality real estate portfolio with a minimum
           of one square foot per share
@@ -31,11 +31,13 @@
               alt=""
             />
 
-            <h3 class="w-full text-xl font-medium text-gray-700 mb-2">
+            <h3 class="text-mysqr-dark-dark w-full text-xl font-medium mb-2">
               {{ my_squareroof_description.title }}
             </h3>
 
-            <p class="text-gray-600 text-sm text-center mb-2 sm:mb-0">
+            <p
+              class="text-mysqr-dark-dark font-light text-sm text-center mb-2 sm:mb-0"
+            >
               {{ my_squareroof_description.description }}
             </p>
           </div>

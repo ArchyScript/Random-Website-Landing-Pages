@@ -7,7 +7,7 @@
         class="flex flex-1 flex-col items-center justify-center lg:mt-8 sm:w-3/4 lg:w-7/12 mx-auto lg:items-start px-5 sm:px-0"
       >
         <h1
-          class="text-gray-800 text-3xl se mx-auto md:text-4xl lg:text-5xl font-bold text-center lg:text-left mb-4 lg:mb-8"
+          class="text-mysqr-dark-dark text-3xl se mx-auto md:text-4xl lg:text-5xl font-bold text-center lg:text-left mb-4 lg:mb-8"
         >
           Africa's seamless property
           <span
@@ -18,7 +18,9 @@
           platform
         </h1>
 
-        <p class="text-gray-600 text-lg text-center mb-3 lg:mb-6">
+        <p
+          class="text-mysqr-dark-dark font-normal text-lg text-center mb-3 lg:mb-6"
+        >
           Squareroof is an exclusive platform to buy and own your share of
           income- producing real estate, right from your mobile phone or
           computer.
@@ -27,9 +29,11 @@
         <div class="flex items-center justify-center text-center mx-auto">
           <button
             type="button"
-            class="mysqr-btn mysqr-btn-black-bg mysqr-btn-hover-main-bg py-3 px-6"
+            class="mysqr-btn mysqr-btn-dark-bg mysqr-btn-hover-main-bg lg:py-4 lg:px-10"
           >
-            Get Started
+            <a href="https://app.mysquareroof.com/auth/register">
+              Get Started
+            </a>
           </button>
         </div>
       </div>

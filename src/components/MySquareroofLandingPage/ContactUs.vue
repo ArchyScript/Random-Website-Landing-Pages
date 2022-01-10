@@ -15,7 +15,7 @@
         </h1>
 
         <p
-          class="text-mysqr-dark-light text-center lg:text-left text-lg mb-3 lg:mb-6"
+          class="text-mysqr-gray text-center lg:text-left text-lg mb-3 lg:mb-6"
         >
           Join our exclusive community of co-owners to learn more about real
           estate investments and co-ownership.
@@ -25,12 +25,12 @@
           <input
             placeholder="Enter email address"
             type="email"
-            class="py-2 px-4 rounded-full mx-2 bg-mysqr-dark-light text-mysqr-dark-dark focus:outline-none"
+            class="py-2 px-4 rounded-full mx-2 bg-mysqr-gray text-mysqr-dark-dark focus:outline-none"
           />
 
           <button
             type="button"
-            class="mysqr-btn mysqr-btn-black-bg border-2 mt-3 sm:mt-0 border-mysqr-dark-light mysqr-btn-hover-main-bg mx-2 py-2 px-6"
+            class="mysqr-btn mysqr-btn-dark-bg border shadow-md mt-3 sm:mt-0 border-mysqr-gray mysqr-btn-hover-main-bg mx-2 py-2 px-6"
           >
             Join
           </button>

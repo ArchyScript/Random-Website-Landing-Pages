@@ -7,12 +7,14 @@
         class="col-span-3 lg:col-span-1 flex flex-col items-center lg:items-start sm:w-3/4 lg:w-full mx-auto"
       >
         <h1
-          class="text-gray-800 text-2xl mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left pr-4 mb-4 lg:mb-8"
+          class="text-mysqr-dark-dark text-2xl mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left pr-4 mb-4 lg:mb-8"
         >
           What clients say about us
         </h1>
 
-        <p class="text-gray-600 text-center lg:text-left text-lg mb-3 lg:mb-6">
+        <p
+          class="text-mysqr-dark-dark font-normal text-center lg:text-left text-lg mb-3 lg:mb-6"
+        >
           Squareroof is a modern property technology platform on a mission to
           simplify and make real estate affordable
         </p>
@@ -20,9 +22,11 @@
         <div class="">
           <button
             type="button"
-            class="mysqr-btn mysqr-btn-black-bg mysqr-btn-hover-main-bg py-3 px-6"
+            class="mysqr-btn mysqr-btn-dark-bg mysqr-btn-hover-main-bg lg:py-4 lg:px-10"
           >
-            About Squareroof
+            <a href="https://www.mysquareroof.com/about">
+              About Squareroof
+            </a>
           </button>
         </div>
       </div>
@@ -35,7 +39,7 @@
           :key="client_review"
           class="rounded-2xl bg-mysqr-semi-light flex flex-col justify-center px-8 py-6"
         >
-          <p class="text-gray-600 text-lg font-light mb-4">
+          <p class="text-mysqr-dark-dark text-lg font-light mb-4">
             {{ client_review.review }}
           </p>
 
