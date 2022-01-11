@@ -1,11 +1,14 @@
 <template>
-  <div class="bg-white">
+  <div class="bg-mysqr-light">
     <Topbar />
     <Welcome />
-    <WhatWeDo />
-    <Reviews />
+    <About />
+    <Benefit1 />
+    <HowItWorks />
+    <Benefit2 />
+    <ClientReview />
     <GettingStarted />
-    <FeaturedOn />
+    <ContactUs />
     <Footer />
   </div>
 </template>
@@ -15,14 +18,17 @@ import { ref } from 'vue'
 
 import Topbar from './Topbar.vue'
 import Welcome from './Welcome.vue'
-import WhatWeDo from './WhatWeDo/Main.vue'
-import Reviews from './Reviews.vue'
+import About from './About.vue'
+import Benefit1 from './Benefit1.vue'
+import HowItWorks from './HowItWorks.vue'
+import Benefit2 from './Benefit2.vue'
+import ClientReview from './ClientReview.vue'
 import GettingStarted from './GettingStarted.vue'
-import FeaturedOn from './FeaturedOn.vue'
+import ContactUs from './ContactUs.vue'
 import Footer from './Footer.vue'
 
 export default {
-  name: 'StranerdLandingPage',
+  name: 'LandingPage',
   setup() {
     const readersNumber = ref('test')
     const book = ref('testing')
@@ -36,10 +42,13 @@ export default {
   components: {
     Topbar,
     Welcome,
-    WhatWeDo,
-    Reviews,
+    About,
+    Benefit1,
+    HowItWorks,
+    Benefit2,
+    ClientReview,
     GettingStarted,
-    FeaturedOn,
+    ContactUs,
     Footer,
   },
 }

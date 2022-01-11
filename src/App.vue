@@ -5,6 +5,19 @@
 </template>
 
 <style>
+/*
+@import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
+
+html,
+body {
+  font-family: 'Roboto', sans-serif;
+}
+
+#app {
+  font-family: 'Roboto', sans-serif;
+}
+*/
+
 .btn {
   @apply rounded-md shadow-md px-6 py-3 transition duration-300;
 }
@@ -33,5 +46,16 @@
 }
 .mysqr-btn-hover-no-bg {
   @apply hover:bg-transparent;
+}
+
+/* Stranerd */
+.stranerd-btn {
+  @apply rounded-lg py-2 px-6 transition duration-100;
+}
+.stranerd-btn-main-bg {
+  @apply bg-stranerd-main text-white;
+}
+.stranerd-btn-no-bg {
+  @apply bg-transparent text-stranerd-main border border-white;
 }
 </style>
