@@ -1,8 +1,8 @@
 import { createRouter, createWebHistory } from 'vue-router'
 
 // Routes
-const LandingPage = () =>
-    import ('@/components/LandingPage/Main.vue')
+const Home = () =>
+    import ('@/components/Home/Main.vue')
 const CitonhubLandingPage = () =>
     import ('@/components/CitonhubLandingPage/Main.vue')
 const StranerdLandingPage = () =>
@@ -11,9 +11,9 @@ const MySquareroofLandingPage = () =>
     import ('@/components/MySquareroofLandingPage/Main.vue')
 
 const routes = [{
-        path: '/landing-page',
-        name: 'LandingPage',
-        component: LandingPage,
+        path: '/',
+        name: 'Home',
+        component: Home,
     },
     {
         path: '/mysquareroof',
