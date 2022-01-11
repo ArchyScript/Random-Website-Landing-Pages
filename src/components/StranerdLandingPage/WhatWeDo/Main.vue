@@ -1,5 +1,5 @@
 <template>
-  <div class="bg-white mt-12 lg:mt-20">
+  <div class="bg-white mt-24">
     <div
       class="container flex flex-col justify-center items-center mx-auto px-2"
     >
