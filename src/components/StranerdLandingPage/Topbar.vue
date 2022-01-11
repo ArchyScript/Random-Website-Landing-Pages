@@ -64,7 +64,7 @@
             class="flex justify-between items-center py-2 w-full"
           >
             <span
-              class="fa fa-bars fa-2x mx-2 p-2"
+              class="fa fa-bars mx-2 p-2"
               @click="toggleNavbarDropdown"
             ></span>
 
@@ -78,10 +78,7 @@
               </a>
             </div>
 
-            <span
-              class="fa fa-search fa-2x mx-2 p-2"
-              @click="toggleSearchBar"
-            ></span>
+            <span class="fa fa-search mx-2 p-2" @click="toggleSearchBar"></span>
           </div>
 
           <div
@@ -95,7 +92,7 @@
             />
 
             <span
-              class="fa fa-times fa-2x mx-2 p-2 cursor-pointer"
+              class="fa fa-times mx-2 p-2 cursor-pointer"
               @click="toggleSearchBar"
             ></span>
           </div>

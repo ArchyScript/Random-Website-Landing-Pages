@@ -12,7 +12,7 @@
       >
         <div class="flex flex-col mb-4">
           <h4
-            class="block text-white mb-3 sm:mb-6 lg:md-12 font-medium capitalized"
+            class="block text-white mb-3 sm:mb-6 lg:md-16 font-medium capitalized"
           >
             {{ footer_link.title }}
           </h4>
@@ -32,7 +32,21 @@
       </div>
     </div>
 
-    <div class="py-2 px-5 flex justify-center items-center mt-6"></div>
+    <div class="py-2 px-5 flex justify-center items-center mt-6 text-white">
+      <div
+        v-for="(social_link, index) in social_links"
+        :key="`${social_link}_${index}`"
+      >
+        <a :href="social_link.link" class="">
+          <span
+            :class="`${social_link.icon} flex lg:hidden mx-2 p-2 rounded-lg`"
+          ></span>
+          <span
+            :class="`${social_link.icon} hidden lg:flex fa-2x mx-2 px-3 py-1 border-2 border-white rounded-xl`"
+          ></span>
+        </a>
+      </div>
+    </div>
 
     <div class="py-2 px-5 flex justify-center items-center mt-6">
       <p class="mb-10 py-2 lg:px-5 text-sm lg:text-lg font-light text-white">
@@ -47,6 +61,23 @@ import { ref } from 'vue'
 
 export default {
   setup() {
+    const social_links = ref([
+      {
+        title: 'Facebook',
+        icon: 'fa fa-facebook',
+        link: '',
+      },
+      {
+        title: 'Instagram',
+        icon: 'fa fa-instagram',
+        link: '',
+      },
+      {
+        title: 'Twitter',
+        icon: 'fa fa-twitter',
+        link: '',
+      },
+    ])
     const footer_links = ref([
       {
         title: 'Company',
@@ -128,6 +159,7 @@ export default {
 
     return {
       footer_links,
+      social_links,
     }
   },
 }
