@@ -3,12 +3,16 @@ import { createRouter, createWebHistory } from 'vue-router'
 // Routes
 const Home = () =>
     import ('@/components/Home/Main.vue')
-const CitonhubLandingPage = () =>
-    import ('@/components/CitonhubLandingPage/Main.vue')
-const StranerdLandingPage = () =>
-    import ('@/components/StranerdLandingPage/Main.vue')
-const MySquareroofLandingPage = () =>
-    import ('@/components/MySquareroofLandingPage/Main.vue')
+const Citonhub = () =>
+    import ('@/components/Citonhub/Main.vue')
+const Stranerd = () =>
+    import ('@/components/Stranerd/Main.vue')
+const Squareroof = () =>
+    import ('@/components/Squareroof/Main.vue')
+const ArchitectureHub = () =>
+    import ('@/components/ArchitectureHub/Main.vue')
+const Enyata = () =>
+    import ('@/components/Enyata/Main.vue')
 
 const routes = [{
         path: '/',
@@ -17,18 +21,28 @@ const routes = [{
     },
     {
         path: '/mysquareroof',
-        name: 'MySquareroofLandingPage',
-        component: MySquareroofLandingPage,
+        name: 'Squareroof',
+        component: Squareroof,
     },
     {
         path: '/citonhub',
-        name: 'CitonhubLandingPage',
-        component: CitonhubLandingPage,
+        name: 'Citonhub',
+        component: Citonhub,
     },
     {
         path: '/stranerd',
-        name: 'StranerdLandingPage',
-        component: StranerdLandingPage,
+        name: 'Stranerd',
+        component: Stranerd,
+    },
+    {
+        path: '/architecturehub',
+        name: 'ArchitectureHub',
+        component: ArchitectureHub,
+    },
+    {
+        path: '/enyata',
+        name: 'Enyata',
+        component: Enyata,
     },
 ]
 
