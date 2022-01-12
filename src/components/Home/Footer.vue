@@ -1,74 +1,61 @@
 <template>
   <!-- Footer -->
-  <footer id="footer" class="mt-12 lg:mt-20 py-5 px-5 lg:px-15">
-    <div class="">
-      <div class="grid grid-cols-2 gap-6 p-5 lg:p-10">
-        <div class="col-span-2 md:col-span-1 flex-1 flex-col">
-          <div class="flex justify-between items-center">
-            <img
-              :src="require('@/assets/mysquareroof/squareroof2.png')"
-              alt="logo"
-              class="h-6 w-auto mb-6"
-            />
-          </div>
-
-          <div
-            class="flex flex-col sm:flex-row gap-6 justify-between sm:items-center lg:items-start"
+  <footer
+    id="footer"
+    class="mt-10 lg:px-10 bg-stranerd-dark-dark p-5 md:p-10 lg:p-15"
+  >
+    <!--
+    <div class="grid grid-cols-4 items justify-between gap-6 mt-8">
+      <div
+        v-for="footer_link in footer_links"
+        :key="footer_link"
+        class="flex-1 col-span-4 sm:col-span-2 md:col-span-1"
+      >
+        <div class="flex items-center flex-col mb-4">
+          <h4
+            class="block text-white mb-3 sm:mb-6 lg:md-16 font-medium capitalized"
           >
-            <div
-              v-for="address_and_location in address_and_locations"
-              :key="address_and_location"
-              class="flex flex-1 flex-col mb-3 lg:mb-4 text-mysqr-dark-dark"
+            {{ footer_link.title }}
+          </h4>
+
+          <div class="flex items-center flex-col">
+            <span
+              v-for="footer_sub_link in footer_link.sub_links"
+              :key="footer_sub_link"
+              class="text-font-light mb-4 cursor-pointer font-light text-white text-sm hover:text-mysqr-main"
             >
-              <h4 class="mb-1 font-medium text-opacity-50">
-                {{ address_and_location.title }}
-              </h4>
-              <span class="text-sm font-light">
-                ‍{{ address_and_location.address }}
-              </span>
-              <span class="text-sm font-normal">
-                {{ address_and_location.location }}
-              </span>
-            </div>
-          </div>
-        </div>
-
-        <div
-          class="col-span-2 md:col-span-1 flex flex-wrap justify-between gap-6"
-        >
-          <div
-            v-for="footer_link in footer_links"
-            :key="footer_link"
-            class="flex-1"
-          >
-            <div class="flex flex-col mb-4">
-              <h4
-                class="block text-mysqr-dark-dark mb-2 sm:mb-4 lg:md-6 font-medium capitalized"
-              >
-                {{ footer_link.title }}
-              </h4>
-
-              <div class="flex flex-col">
-                <span
-                  v-for="footer_sub_link in footer_link.sub_links"
-                  :key="footer_sub_link"
-                  class="text-font-normal mb-1 cursor-pointer font-light text-mysqr-dark-dark text-sm hover:text-mysqr-main"
-                >
-                  <a :href="footer_sub_link.link">
-                    {{ footer_sub_link.title }}
-                  </a>
-                </span>
-              </div>
-            </div>
+              <a :href="footer_sub_link.link">
+                {{ footer_sub_link.title }}
+              </a>
+            </span>
           </div>
         </div>
       </div>
+    </div>
+      -->
 
-      <div class="py-2 px-5">
-        <p class="mb-10 py-2 lg:px-5 text-sm font-light text-mysqr-dark-dark">
-          &copy; 2022 CeedCap.
-        </p>
+    <div class="py-2 px-5 flex justify-center items-center text-white">
+      <div
+        v-for="(social_link, index) in social_links"
+        :key="`${social_link}_${index}`"
+      >
+        <a :href="social_link.link">
+          <span
+            :class="`${social_link.icon} flex lg:hidden mx-2 p-2 rounded-lg`"
+          ></span>
+          <span
+            :class="`${social_link.icon} hidden lg:flex fa-2x mx-4 px-3 py-1 border-2 border-white rounded-xl`"
+          ></span>
+        </a>
       </div>
+    </div>
+
+    <div class="py-2 px-5 mt-4 flex justify-center items-center">
+      <p
+        class="mb-10 py-2 lg:px-5 text-sm md:text-lg lg:text-2xl font-normal text-white"
+      >
+        &copy; 2022 | ArchyScript
+      </p>
     </div>
   </footer>
 </template>
@@ -78,68 +65,97 @@ import { ref } from 'vue'
 
 export default {
   setup() {
-    const address_and_locations = ref([
+    const social_links = ref([
       {
-        title: 'Lagos',
-        address: '11b Fatai Idowu Arobieke, Lekki Ph 1,',
-        location: 'Lagos, Nigeria.',
+        title: 'Github',
+        icon: 'fa fa-github',
+        link: 'https://github.com/ArchyScript',
       },
       {
-        title: 'Maryland',
-        address: '9711 Washingtonian Boulevard,',
-        location: 'Maryland, 20878, USA.',
+        title: 'Twitter',
+        icon: 'fa fa-twitter',
+        link: 'https://twitter.com/ArchyScript',
+      },
+      {
+        title: 'LinkedIn',
+        icon: 'fa fa-linkedin',
+        link: 'https://www.linkedin.com/in/archyscript/',
       },
     ])
-
     const footer_links = ref([
       {
-        title: 'Quick Links',
+        title: 'Company',
         sub_links: [
           {
-            title: 'Learn',
-            link: 'https://www.mysquareroof.com/learn',
+            title: 'Privacy Policy',
+            link: 'https://stranerd.com/legal/privacy-policy.pdf',
           },
           {
-            title: 'How it works',
-            link: 'https://www.mysquareroof.com/how-it-works',
+            title: 'Terms of Service',
+            link: 'https://stranerd.com/legal/terms-of-use.pdf',
+          },
+          {
+            title: 'Terms and Conditions',
+            link: 'https://stranerd.com/legal/terms-and-conditions.pdf',
+          },
+        ],
+      },
+      {
+        title: 'Community',
+        sub_links: [
+          {
+            title: 'Ask a question',
+            link: 'https://stranerd.com/questions/create',
+          },
+          {
+            title: 'Blog',
+            link: 'https://stranerd.medium.com/',
+          },
+          {
+            title: 'Stranerd Africa',
+            link: 'https://www.instagram.com/stranerdafrica_/',
+          },
+          {
+            title: 'Stranerd Official',
+            link: 'https://www.instagram.com/officialstranerd/',
+          },
+        ],
+      },
+      {
+        title: 'About',
+        sub_links: [
+          {
+            title: 'Company',
+            link: 'https://stranerd.com/',
+          },
+          {
+            title: 'Team',
+            link: 'https://stranerd.com/',
+          },
+          {
+            title: 'Press',
+            link: 'https://stranerd.com/',
+          },
+          {
+            title: 'Careers',
+            link: 'https://stranerd.com/',
+          },
+        ],
+      },
+      {
+        title: 'Help',
+        sub_links: [
+          {
+            title: 'FAQs',
+            link: 'https://stranerd.com/',
           },
           {
             title: 'Support',
-            link: 'https://www.mysquareroof.com/contact',
-          },
-        ],
-      },
-      {
-        title: 'Social',
-        sub_links: [
-          {
-            title: 'Facebook',
-            link: 'https://www.facebook.com/mysquareroof',
+            link: 'support@stranerd.com',
           },
           {
-            title: 'Instagram',
-            link: 'https://www.instagram.com/mysquareroof',
-          },
-          {
-            title: 'Twitter',
-            link: 'https://twitter.com/mysquareroof',
-          },
-        ],
-      },
-      {
-        title: 'Terms & Privacy',
-        sub_links: [
-          {
-            title: 'About',
-            link: 'https://www.mysquareroof.com/about',
-          },
-          {
-            title: 'Privacy Policy',
-            link: 'https://www.mysquareroof.com/privacy',
-          },
-          {
-            title: 'Terms of Use',
-            link: 'https://www.mysquareroof.com/terms',
+            title: 'Blog',
+            link: 'https://stranerd.medium.com/',
           },
         ],
       },
@@ -147,7 +163,7 @@ export default {
 
     return {
       footer_links,
-      address_and_locations,
+      social_links,
     }
   },
 }

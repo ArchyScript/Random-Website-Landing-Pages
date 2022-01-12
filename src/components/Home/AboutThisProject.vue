@@ -1,28 +1,21 @@
 <template>
-  <!-- Welcome Page -->
-  <section id="details" class="relative mt-16 lg:mt-24">
+  <section id="about-website" class="relative py-8 lg:py-16">
     <div class="container grid grid-cols-3 lg:mt-8 gap-6 mx-auto px-2">
-      <!-- Contect -->
       <div
         class="col-span-3 lg:col-span-1 flex flex-col items-center lg:items-start sm:w-3/4 lg:w-full mx-auto px-5 sm:px-0"
       >
         <h1
           class="text-mysqr-dark-dark text-2xl mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left pr-4 mb-4 lg:mb-8"
         >
-          Build real wealth beyond stocks for
-          <span
-            class="test-mysqr-main items-center bg-mysqr-semi-light rounded-lg px-1"
-          >
-            1 sq. ft. per share
-          </span>
+          About Project
         </h1>
 
         <p
           class="text-mysqr-dark-dark font-normal text-center lg:text-left text-lg mb-3 lg:mb-6"
         >
-          Squareroof is a new and secure way for you to build long term wealth
-          with real estate. We are making it easy for anyone to build real
-          wealth one square foot per month.
+          This is a simple website that keeps track of all top websites landing
+          pages I cloned. It was created to learn how to use Vue JS and Tailwind
+          CSS combined
         </p>
 
         <div class="">
@@ -30,8 +23,8 @@
             type="button"
             class="mysqr-btn mysqr-btn-dark-bg mysqr-btn-hover-main-bg lg:py-4 lg:px-10"
           >
-            <a href="https://app.mysquareroof.com/auth/register">
-              Get Started
+            <a href="">
+              More Details
             </a>
           </button>
         </div>

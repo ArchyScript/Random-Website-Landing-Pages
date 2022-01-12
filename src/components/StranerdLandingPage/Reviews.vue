@@ -1,7 +1,7 @@
 <template>
   <section
-    id="details"
-    class="relative mt-12 lg:mt-20 py-5 px-5 lg:px-15"
+    id="reviews"
+    class="relative mt-16 lg:mt-20 py-5 px-5 lg:px-15"
   ></section>
 </template>
 

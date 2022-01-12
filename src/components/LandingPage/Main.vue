@@ -1,10 +1,11 @@
 <template>
-  <div class="bg-mysqr-light">
+  <div class="">
     <Topbar />
     <Welcome />
-    <AboutThisProject />
-    <AboutTheDeveloper />
-    <ClonedSitesLinksAndDescription />
+    <Features />
+    <Downloads />
+    <FAQs />
+    <ContactUs />
     <Footer />
   </div>
 </template>
@@ -14,9 +15,10 @@ import { ref } from 'vue'
 
 import Topbar from './Topbar.vue'
 import Welcome from './Welcome.vue'
-import AboutThisProject from './AboutThisProject.vue'
-import AboutTheDeveloper from './AboutTheDeveloper.vue'
-import ClonedSitesLinksAndDescription from './ClonedSitesLinksAndDescription.vue'
+import Features from './Features.vue'
+import Downloads from './Downloads.vue'
+import FAQs from './FAQs.vue'
+import ContactUs from './ContactUs.vue'
 import Footer from './Footer.vue'
 
 export default {
@@ -34,9 +36,10 @@ export default {
   components: {
     Topbar,
     Welcome,
-    AboutThisProject,
-    AboutTheDeveloper,
-    ClonedSitesLinksAndDescription,
+    Features,
+    Downloads,
+    FAQs,
+    ContactUs,
     Footer,
   },
 }

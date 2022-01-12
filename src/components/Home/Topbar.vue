@@ -6,10 +6,10 @@
     <div class="container flex flex-col">
       <nav class="flex justify-between items-center py-3">
         <div class="py-1 mx-2">
-          <a href="mysquareroof">
+          <a href="">
             <img
-              class="h-5 cursor-pointer"
-              :src="require('@/assets/mysquareroof/squareroof2.png')"
+              class="h-7 cursor-pointer"
+              :src="require('@/assets/home-logo.png')"
               alt="logo"
             />
           </a>
@@ -24,7 +24,7 @@
             class="cursor-pointer"
           >
             <a
-              :href="navbar_link.liink"
+              :href="`#${navbar_link.in_page_route_by_id}`"
               class="cursor-pointer text-gray-800 hover:text-mysqr-main"
             >
               {{ navbar_link.title }}
@@ -33,17 +33,15 @@
         </ul>
 
         <div class="flex text-sm items-center">
-          <button
-            class="hidden sm:flex mysqr-btn mysqr-btn-no-bg mx-1 hover:text-mysqr-main hover:shadow-xs"
+          <a
+            href="https://archyscript-portfolio.netlify.app/"
+            target="_blank"
+            class="hidden sm:flex mysqr-btn mysqr-btn-hover-main-bg border-2 border-mysqr-dark-dark hover:border-0 hover:shadow-md mx-1"
           >
-            Signup
-          </button>
-
-          <button
-            class="hidden sm:flex mysqr-btn mysqr-btn-hover-black-bg border-2 border-mysqr-dark-dark hover:border-0 hover:shadow-md mx-1"
-          >
-            Login
-          </button>
+            <button>
+              My Portfolio
+            </button>
+          </a>
 
           <button
             @click="navbarTogglerIsOpenBoolean = !navbarTogglerIsOpenBoolean"
@@ -56,31 +54,31 @@
 
       <div
         :class="navbarTogglerIsOpenBoolean ? 'flex' : 'hidden'"
-        class="my-2 py-2 text-sm flex-col md:hidden"
+        class="my-2 py-2 text-sm flex-col md:hidden justify-center items-center mx-auto"
       >
         <div v-for="navbar_link in navbar_links" :key="navbar_link">
-          <span
+          <a
+            :href="`#${navbar_link.in_page_route_by_id}`"
             class="block text-center py-2 mb-1 cursor-pointer text-gray-800 hover:text-mysqr-main"
           >
-            <a :href="navbar_link.link">{{ navbar_link.title }}</a>
-          </span>
+            <span>
+              {{ navbar_link.title }}
+            </span>
+          </a>
         </div>
 
         <div
-          class="flex sm:hidden flex-end justify-center items-center mt-2 py-3 border-t border-mysqr-dark-light"
+          class="flex sm:hidden mx-auto flex-end justify-center items-center mt-2 py-3"
         >
-          <span class="flex flex-1"></span>
-          <button
-            class="mysqr-btn mysqr-btn-hover-black-bg border-2 border-mysqr-dark-dark hover:border-0 hover:shadow-md mx-1"
+          <a
+            href="https://archyscript-portfolio.netlify.app/"
+            target="_blank"
+            class="mysqr-btn mysqr-btn-hover-main-bg border-2 border-mysqr-dark-dark hover:border-0 hover:shadow-md mx-1 px-6 py-2"
           >
-            Signup
-          </button>
-
-          <button
-            class="mysqr-btn mysqr-btn-hover-black-bg border-2 border-mysqr-dark-dark hover:border-0 hover:shadow-md mx-1"
-          >
-            Login
-          </button>
+            <button>
+              My Portfolio
+            </button>
+          </a>
         </div>
       </div>
     </div>
@@ -100,7 +98,6 @@ export default {
     })
 
     const handleScroll = () => {
-      console.log('scrolling 23')
       if (window.pageYOffset > 0) {
         // user is scrolled
         if (scrollShadowBoolean.value) scrollShadowBoolean.value = false
@@ -112,20 +109,20 @@ export default {
 
     const navbar_links = ref([
       {
-        title: 'How it works',
-        link: 'https://www.mysquareroof.com/how-it-works',
+        title: 'Home',
+        in_page_route_by_id: 'home',
       },
       {
-        title: 'Learn',
-        link: 'https://www.mysquareroof.com/learn',
+        title: 'About Website',
+        in_page_route_by_id: 'about-website',
       },
       {
-        title: 'About',
-        link: 'https://www.mysquareroof.com/about',
+        title: 'About Developer',
+        in_page_route_by_id: 'about-developer',
       },
       {
-        title: 'Contact',
-        link: 'https://www.mysquareroof.com/contact',
+        title: 'Cloned Website',
+        in_page_route_by_id: 'cloned_websites',
       },
     ])
 

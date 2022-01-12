@@ -10,7 +10,7 @@
       </div>
 
       <div
-        class="col-span-2 md:col-span-1 p-16 flex flex-col items-center justify-center mt-6 lg:my-16 bg-purple-500 rounded-3xl"
+        class="col-span-2 md:col-span-1 p-16 flex flex-col items-center justify-center mt-6 lg:my-16 bg-pink-500 rounded-3xl"
       >
         <div class="mx-auto mb-6 lg:mb-10">
           <span

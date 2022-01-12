@@ -1,5 +1,5 @@
 <template>
-  <section id="how-it-works" class="relative mt-10 lg:mt-20 py-5 px-5 lg:px-15">
+  <section id="how-it-works" class="relative mt-16 lg:mt-20 py-5 px-5 lg:px-15">
     <div
       class="container flex flex-col justify-center items-center lg:mt-8 mx-auto px-2"
     >
