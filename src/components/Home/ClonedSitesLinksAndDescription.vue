@@ -45,7 +45,7 @@
           <div class="flex justify-between items-center">
             <span class="flex-1"></span>
 
-            <div class="flex items-center text-sm">
+            <div class="flex items-center justify-between flex-wrap text-sm">
               <span
                 class="hidden mysqr-btn mysqr-btn-dark-bg mysqr-btn-hover-main-bg cursor-pointer"
                 @click="viewClonedWebsiteFunction(cloned_website.route)"
@@ -94,6 +94,12 @@ export default {
           computer.`,
         route: '/stranerd',
         original_website_link: 'https://stranerd.com/',
+      },
+      {
+        website_name: 'Fiverr',
+        description: `Fiverr helps service-providers collect payments, promote their services, manage orders, exchange files and communicate with buyers`,
+        route: '/fiverr',
+        original_website_link: 'https://fiverr.com/',
       },
     ])
 

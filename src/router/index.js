@@ -13,6 +13,9 @@ const ArchitectureHub = () =>
     import ('@/components/ArchitectureHub/Main.vue')
 const Enyata = () =>
     import ('@/components/Enyata/Main.vue')
+const Fiverr = () =>
+    import ('@/components/Fiverr/Main.vue')
+
 
 const routes = [{
         path: '/',
@@ -43,6 +46,11 @@ const routes = [{
         path: '/enyata',
         name: 'Enyata',
         component: Enyata,
+    },
+    {
+        path: '/fiverr',
+        name: 'Fiverr',
+        component: Fiverr,
     },
 ]
 
