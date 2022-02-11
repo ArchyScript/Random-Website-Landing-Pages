@@ -12,12 +12,12 @@
         <div class="flex flex-wrap mx-auto justify-center items-center mt-2">
           <div
             class="mx-3 md:mx-6 lg:mx-8"
-            v-for="(featured_on, index) in featured_ons"
-            :key="`${featured_on}_${index}`"
+            v-for="(trustee, index) in trustees"
+            :key="`${trustee}_${index}`"
           >
-            <a :href="featured_on.link" :title="featured_on.title">
+            <a :href="trustee.link" :title="trustee.title">
               <img
-                :src="featured_on.image_url"
+                :src="trustee.image_url"
                 alt=""
                 class="h-5 md:h-8 lg:h-10 cursor-pointer"
               />
@@ -34,7 +34,27 @@ import { ref } from 'vue'
 
 export default {
   setup() {
-    const featured_ons = ref([
+    const trustees = ref([
+      {
+        title: 'Techpoint',
+        link: 'https://google.com',
+        image_url: require('@/assets/stranerd/techpoint.png'),
+      },
+      {
+        title: 'Technext',
+        link: 'https://google.com',
+        image_url: require('@/assets/stranerd/technext.png'),
+      },
+      {
+        title: 'Techpoint',
+        link: 'https://google.com',
+        image_url: require('@/assets/stranerd/techpoint.png'),
+      },
+      {
+        title: 'Technext',
+        link: 'https://google.com',
+        image_url: require('@/assets/stranerd/technext.png'),
+      },
       {
         title: 'Techpoint',
         link: 'https://google.com',
@@ -48,7 +68,7 @@ export default {
     ])
 
     return {
-      featured_ons,
+      trustees,
     }
   },
 }

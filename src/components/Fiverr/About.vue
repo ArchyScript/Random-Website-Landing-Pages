@@ -1,47 +1,63 @@
 <template>
   <!-- Welcome Page -->
-  <section id="welcome" class="relative mt-16 lg:mt-20">
-    <div class="container flex items-center lg:mt-8 mx-auto px-5 sm:px-2">
+  <section id="details" class="relative mt-16 lg:mt-24">
+    <div class="container grid grid-cols-3 lg:mt-8 gap-6 mx-auto px-2">
+      <div class="col-span-3 lg:col-span-2 hidden lg:flex flex-1 relative">
+        <img
+          class="flex justify-center items-center mx-auto p-2 bg-white"
+          :src="require('@/assets/mysquareroof/squareroof3.svg')"
+          alt=""
+        />
+      </div>
+
       <!-- Contect -->
-      <div class="flex flex-1 flex-col items-center justify-center">
+      <div
+        class="col-span-3 lg:col-span-1 flex flex-col items-center lg:items-start sm:w-3/4 lg:w-full mx-auto px-5 sm:px-0"
+      >
         <h1
-          class="text-mysqr-dark-dark text-3xl sm:w-3/4 lg:w-7/12 mx-auto md:text-4xl lg:text-5xl font-medium text-center mb-4 lg:mb-8"
+          class="text-mysqr-dark-dark text-2xl mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left mb-4 lg:mb-8"
         >
-          Own your share of income producing properties
+          We ensure your ownership is well
+          <span
+            class="test-mysqr-main items-center bg-mysqr-semi-light rounded-lg px-1"
+          >
+            protected
+          </span>
         </h1>
 
         <p
-          class="text-mysqr-dark-dark font-normal sm:w-3/4 lg:w-2/4 text-lg text-center mb-3 lg:mb-6"
+          class="text-mysqr-dark-dark font-normal text-center lg:text-left text-lg mb-3 lg:mb-6"
         >
-          Start investing in high-quality real estate portfolio with a minimum
-          of one square foot per share
+          We follow a transparent and simplified structure that ensures your
+          share of ownership is managed and protected by our institutional
+          partners that include:
         </p>
 
-        <div
-          class="grid grid-cols-4 mt-2 gap-6 justify-center text-center mx-auto"
-        >
-          <div
-            v-for="my_squareroof_description in my_squareroof_descriptions"
-            :key="my_squareroof_description"
-            class="col-span-4 sm:col-span-2 lg:col-span-1 flex flex-col justify-center p-2"
-          >
-            <img
-              class="h-20 w-20 lg:h-20 lg:w-20 mb-4 rounded-2xl shadow-md flex justify-center items-center mx-auto p-5 bg-white"
-              :src="my_squareroof_description.image_url"
-              alt=""
-            />
+        <div class="flex flex-col mt-2 text-mysqr-dark-dark">
+          <div v-for="benefit in benefits" :key="benefit" class="mb-1 text-sm">
+            <div class="flex p-1 items-center">
+              <span>
+                <img
+                  :src="require('@/assets/mysquareroof/check.svg')"
+                  alt="logo"
+                  class="h-7 w-7 mr-2 p-1 rounded-full bg-white shadow-xs"
+                />
+              </span>
 
-            <h3 class="text-mysqr-dark-dark w-full text-xl font-medium mb-2">
-              {{ my_squareroof_description.title }}
-            </h3>
-
-            <p
-              class="text-mysqr-dark-dark font-light text-sm text-center mb-2 sm:mb-0"
-            >
-              {{ my_squareroof_description.description }}
-            </p>
+              <span class="flex flex-1 font-medium mx-2">
+                {{ benefit.title }}
+              </span>
+            </div>
           </div>
         </div>
+      </div>
+
+      <div class="col-span-3 lg:col-span-2 flex flex-1 lg:hidden relative mt-2">
+        <img
+          class="flex justify-center items-center mx-auto p-2 bg-white"
+          :src="require('@/assets/mysquareroof/squareroof3.svg')"
+          alt=""
+        />
       </div>
     </div>
   </section>
@@ -52,35 +68,20 @@ import { ref } from 'vue'
 
 export default {
   setup() {
-    const my_squareroof_descriptions = ref([
+    const benefits = ref([
       {
-        title: 'Hand Picked for You',
-        image_url: require('@/assets/mysquareroof/hand-pick.svg'),
-        description:
-          'Choose from a well-diversified portfolio of high-value properties',
+        title: 'A SEC licensed trustee',
       },
       {
-        title: 'Own Your Share',
-        image_url: require('@/assets/mysquareroof/share.svg'),
-        description:
-          'Buy a minimum of one square foot per property to enjoy benefits',
+        title: 'A professional property manager',
       },
       {
-        title: 'Earn Rental Dividends',
-        image_url: require('@/assets/mysquareroof/rental-dividens.png'),
-        description:
-          'Each property rent is guaranteed to pay you regular income',
-      },
-      {
-        title: 'Enjoy Capital Gains',
-        image_url: require('@/assets/mysquareroof/capital-gain.svg'),
-        description:
-          'Watch your money grow as the value of your property rises',
+        title: 'A chartered  estate surveyor and valuer',
       },
     ])
 
     return {
-      my_squareroof_descriptions,
+      benefits,
     }
   },
 }

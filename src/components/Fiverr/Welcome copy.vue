@@ -2,14 +2,16 @@
   <section
     style="background: #8b2604;"
     :style="`background-color: ${color_and_image_object.color};`"
-    class="relative pt-16 pb-12 lg:pt-24"
+    class="relative pt-16 pb-8 lg:pt-24"
   >
-    <div class="container grid grid-cols-5 lg:mt-8 gap-6 mx-auto px-2">
+    <div
+      class="container grid grid-cols-2 lg:mt-8 gap-6 md:gap-12 mx-auto px-2"
+    >
       <div
-        class="col-span-5 lg:col-span-3 flex flex-col items-center lg:items-start sm:w-3/4 lg:w-full mx-auto px-5 sm:px-0"
+        class="col-span-2 md:col-span-1 flex flex-col items-center lg:items-start sm:w-3/4 lg:w-full mx-auto px-5 sm:px-0"
       >
         <h1
-          class="text-white text-2xl mt-10 mx-auto md:text-4xl lg:text-5xl font-bold text-center lg:text-left pr-4 mb-4 lg:mb-8"
+          class="text-white text-2xl mt-10 mx-auto md:text-3xl lg:text-4xl font-bold text-center lg:text-left pr-4 mb-4 lg:mb-8"
         >
           Find the perfect
           <span class="italic font-medium">freelance</span>
@@ -17,10 +19,8 @@
         </h1>
 
         <div class="flex items-center justify-center mb-6 lg-mb-8">
-          <div class="flex border-2 border-gray-200 bg-white rounded-lg w-full">
-            <button
-              class="flex items-center justify-center px-4 border-r rounded-lg"
-            >
+          <div class="flex border-2 border-gray-200 bg-white rounded">
+            <button class="flex items-center justify-center px-4 border-r">
               <svg
                 class="w-6 h-6 text-gray-500"
                 fill="currentColor"
@@ -34,11 +34,11 @@
             </button>
             <input
               type="text"
-              class="outline-0 px-4 py-3 w-80 focus:outline-none"
+              class="outline-0 px-4 py-2 w-80 focus:outline-none"
               placeholder='Try "building mobile app"'
             />
             <button
-              class="px-6 text-white bg-fiverr-main border-l font-semibold rounded-lg"
+              class="px-4 text-white bg-fiverr-main border-l fon-semibold"
             >
               Search
             </button>
@@ -59,10 +59,10 @@
         </div>
       </div>
 
-      <div class="col-span-5 lg:col-span-2 flex flex-1 relative">
+      <div class="col-span-2 md:col-span-1 flex flex-1 relative">
         <img
           class="flex justify-center items-center mx-auto p-2 bg-white"
-          :src="require('@/assets/mysquareroof/squareroof3.svg')"
+          :src="color_and_image_object.image_link"
           alt=""
         />
       </div>
@@ -138,49 +138,6 @@ export default {
       },
     ])
 
-    // const sub_links = ref([
-    //   {
-    //     title: 'Graphics & Design',
-    //     link: 'https://www.fiverr.com/categories/graphics-design',
-    //   },
-    //   {
-    //     title: 'Digital Marketing',
-    //     link: 'https://www.fiverr.com/categories/online-marketing',
-    //   },
-    //   {
-    //     title: 'Writing & Translation',
-    //     link: 'https://www.fiverr.com/categories/writing-translation',
-    //   },
-    //   {
-    //     title: 'Video & Animation',
-    //     link: 'https://www.fiverr.com/categories/video-animation',
-    //   },
-    //   {
-    //     title: 'Music & Audio',
-    //     link: 'https://www.fiverr.com/categories/music-audio',
-    //   },
-    //   {
-    //     title: 'Programming & Tech',
-    //     link: 'https://www.fiverr.com/categories/programming-tech',
-    //   },
-    //   {
-    //     title: 'Data',
-    //     link: 'https://www.fiverr.com/categories/data',
-    //   },
-    //   {
-    //     title: 'Business',
-    //     link: 'https://www.fiverr.com/categories/business',
-    //   },
-    //   {
-    //     title: 'Lifestyles',
-    //     link: 'https://www.fiverr.com/categories/lifestyle',
-    //   },
-    //   {
-    //     title: 'Sitemap',
-    //     link: 'https://www.fiverr.com/categories',
-    //   },
-    // ])
-
     const navbar_links = ref([
       {
         title: 'Fiverr Business',
@@ -228,6 +185,7 @@ export default {
       navbar_links,
       random_color_and_image,
       popular_searches,
+      // color_and_images,
       color_and_image_object,
       // current_image,
     }
@@ -237,6 +195,12 @@ export default {
 
 <style scoped>
 header.scrolled {
-  @apply shadow-lg bg-white text-gray-500;
+  @apply shadow-lg bg-white text-fiverr-dark-dark;
+}
+.text {
+  color: #b64663;
+  color: #591125;
+  color: #8b2604;
+  color: #004119;
 }
 </style>

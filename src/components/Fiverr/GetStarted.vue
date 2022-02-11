@@ -11,9 +11,10 @@
         <h1
           class="text-white text-2xl mt-10 mx-auto md:text-4xl lg:text-5xl font-bold text-center lg:text-left pr-4 mb-4 lg:mb-8"
         >
-          Find the perfect
-          <span class="italic font-medium">freelance</span>
-          services for your business
+          Find the
+          <span class="italic font-medium">talent</span>
+          needed to get your business
+          <span class="italic font-medium">growing</span>
         </h1>
 
         <div class="flex items-center justify-center mb-6 lg-mb-8">

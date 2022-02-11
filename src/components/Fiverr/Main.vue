@@ -1,14 +1,18 @@
 <template>
-  <div class="bg-mysqr-light">
+  <div class="">
     <Topbar />
     <Welcome />
-    <About />
-    <Benefit1 />
+    <Trustees />
+    <PopularProfessionalServices />
     <HowItWorks />
-    <Benefit2 />
-    <ClientReview />
+    <MarketPlace />
+    <!-- <TestSlider /> -->
+    <FiverrBusiness />
+    <Reviews />
+    <LogoMaker />
+    <Inspirations />
+    <FiverrGuides />
     <GettingStarted />
-    <ContactUs />
     <Footer />
   </div>
 </template>
@@ -18,14 +22,18 @@ import { ref } from 'vue'
 
 import Topbar from './Topbar.vue'
 import Welcome from './Welcome.vue'
-import About from './About.vue'
-import Benefit1 from './Benefit1.vue'
+import Trustees from './Trustees.vue'
+import PopularProfessionalServices from './PopularProfessionalServices.vue'
 import HowItWorks from './HowItWorks.vue'
-import Benefit2 from './Benefit2.vue'
-import ClientReview from './ClientReview.vue'
-import GettingStarted from './GettingStarted.vue'
-import ContactUs from './ContactUs.vue'
+import MarketPlace from './MarketPlace.vue'
+import FiverrBusiness from './FiverrBusiness.vue'
+import Reviews from './Reviews.vue'
+import LogoMaker from './LogoMaker.vue'
+import Inspirations from './Inspirations.vue'
+import FiverrGuides from './FiverrGuides.vue'
+import GettingStarted from './GetStarted.vue'
 import Footer from './Footer.vue'
+// import TestSlider from './TestSlider.vue'
 
 export default {
   name: 'LandingPage',
@@ -42,14 +50,18 @@ export default {
   components: {
     Topbar,
     Welcome,
-    About,
-    Benefit1,
+    Trustees,
+    PopularProfessionalServices,
     HowItWorks,
-    Benefit2,
-    ClientReview,
+    MarketPlace,
+    FiverrBusiness,
+    Reviews,
+    LogoMaker,
+    Inspirations,
+    FiverrGuides,
     GettingStarted,
-    ContactUs,
     Footer,
+    // TestSlider,
   },
 }
 </script>
