@@ -1,13 +1,7 @@
 <template>
   <!-- Contact Us -->
-  <section
-    id="contact"
-    class="mt-12 lg:mt-20 py-5"
-    style="background-color: #4a73e8;"
-  >
-    <div
-      class="container grid grid-cols-2 lg:mt-8 gap-6 p-10 lg:p-20 bg-mysqr-dark-dark"
-    >
+  <section class="mt-12 lg:mt-20 py-5" style="background-color: #0d084d;">
+    <div class="container grid grid-cols-2 lg:mt-8 gap-10 lg:gap-16">
       <!-- Contect -->
       <div
         class="col-span-2 lg:col-span-1 flex flex-col items-center lg:items-start"
@@ -15,7 +9,10 @@
         <h1
           class="text-white text-2xl mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left pr-4 mb-4 lg:mb-8"
         >
-          Build a solid future in real estate. Join Now
+          A business solution
+          <br />
+          designed for
+          <span class="italic font-medium">teams</span>
         </h1>
 
         <p
@@ -24,8 +21,7 @@
           Join our exclusive community of co-owners to learn more about real
           estate investments and co-ownership.
         </p>
-
-        <div class="flex flex-col sm:flex-row justify-center items-center">
+        <!-- <div class="flex flex-col sm:flex-row justify-center items-center">
           <input
             placeholder="Enter email address"
             type="email"
@@ -38,13 +34,13 @@
           >
             Join
           </button>
-        </div>
+        </div> -->
       </div>
 
       <div class="col-span-2 lg:col-span-1 flex flex-1 relative">
         <img
           class="flex justify-center items-center mx-auto p-2"
-          :src="require('@/assets/mysquareroof/squareroof-dark.svg')"
+          :src="require('@/assets/fiverr/business-desktop.png')"
           alt=""
         />
       </div>

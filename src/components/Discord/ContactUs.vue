@@ -1,12 +1,8 @@
 <template>
   <!-- Contact Us -->
-  <section
-    id="contact"
-    class="mt-12 lg:mt-20 py-5"
-    style="background-color: #4a73e8;"
-  >
+  <section id="contact" class="mt-12 lg:mt-20 py-5 px-5 lg:px-15">
     <div
-      class="container grid grid-cols-2 lg:mt-8 gap-6 p-10 lg:p-20 bg-mysqr-dark-dark"
+      class="container grid grid-cols-2 lg:mt-8 gap-6 mx-auto p-5 lg:p-10 rounded-2xl bg-mysqr-dark-dark"
     >
       <!-- Contect -->
       <div

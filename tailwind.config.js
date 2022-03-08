@@ -22,6 +22,12 @@ module.exports = {
                 'fiverr-gray': '#76818E',
             },
             animation: { 'spin-slow': 'spin 10s linear infinite' },
+
+            gridTemplateColumns: {
+                // Simple 16 column grid
+                '15': 'repeat(15, minmax(0, 1fr))',
+                '16': 'repeat(16, minmax(0, 1fr))',
+            },
         },
         container: {
             center: true,

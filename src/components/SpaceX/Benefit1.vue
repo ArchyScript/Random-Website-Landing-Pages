@@ -1,16 +1,20 @@
 <template>
-  <section
-    class="relative pt-8 mt-8 lg:pt-12 lg:mt-12"
-    style="background-color: #f1fdf7;"
-  >
+  <!-- Welcome Page -->
+  <section id="details" class="relative mt-16 lg:mt-24">
     <div class="container grid grid-cols-3 lg:mt-8 gap-6 mx-auto px-2">
+      <!-- Contect -->
       <div
         class="col-span-3 lg:col-span-1 flex flex-col items-center lg:items-start sm:w-3/4 lg:w-full mx-auto px-5 sm:px-0"
       >
         <h1
           class="text-mysqr-dark-dark text-2xl mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left pr-4 mb-4 lg:mb-8"
         >
-          A whole world of freelance talent at your fingertips
+          Build real wealth beyond stocks for
+          <span
+            class="test-mysqr-main items-center bg-mysqr-semi-light rounded-lg px-1"
+          >
+            1 sq. ft. per share
+          </span>
         </h1>
 
         <p

@@ -1,30 +1,23 @@
 <template>
-  <section
-    id="trustee"
-    class="relative py-2"
-    style="background-color: #fafafa;"
-  >
-    <div class="flex flex-wrap mx-auto justify-center items-center mt-2">
-      <span class="font-semibold text-gray-400 text-xl px-2">Trusted By:</span>
+  <section id="welcome" class="relative mt-14 lg:mt-16">
+    <div class="container lg:mt-8 mx-auto px-5 sm:px-2">
+      <h2 class="text-2xl md:text-4xl font-semibold md-8 text-gray-600">
+        Explore the Marketplace
+      </h2>
+
       <div
-        class="flex mx-4 md:mx-6 lg:mx-8"
-        v-for="(trustee, index) in trustees"
-        :key="`${trustee}_${index}`"
+        class="grid grid-cols-4 gap-8 mx-4 md:mx-6 lg:mx-8"
+        v-for="(marketplace, index) in marketplaces"
+        :key="`${marketplace}_${index}`"
       >
-        <!-- <a :href="trustee.link" :title="trustee.title">
-          <img
-            :src="trustee.image_url"
-            alt=""
-            class="h-5 md:h-8 lg:h-12 cursor-pointer"
-          />
-        </a> -->
         <span>
           <img
-            :src="trustee.image_url"
+            :src="marketplace.image_url"
             alt=""
-            :title="trustee.title"
+            :title="marketplace.title"
             class="h-8 md:h-10 lg:h-14"
           />
+          <span class="">Test me</span>
         </span>
       </div>
     </div>
@@ -36,11 +29,21 @@ import { ref } from 'vue'
 
 export default {
   setup() {
-    const trustees = ref([
+    const marketplaces = ref([
       {
         title: 'Facebook',
         link: '',
         image_url: require('@/assets/fiverr/trustee_facebook.png'),
+      },
+      {
+        title: 'Google',
+        link: '',
+        image_url: require('@/assets/fiverr/trustee_google.png'),
+      },
+      {
+        title: 'Netflix',
+        link: '',
+        image_url: require('@/assets/fiverr/trustee_netflix.png'),
       },
       {
         title: 'Google',
@@ -65,7 +68,7 @@ export default {
     ])
 
     return {
-      trustees,
+      marketplaces,
     }
   },
 }

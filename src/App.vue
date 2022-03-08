@@ -59,10 +59,12 @@ body {
   @apply bg-transparent text-stranerd-main border border-white;
 }
 
-
 /* Fiverr */
 .fiverr-btn {
   @apply rounded-lg py-1 px-4 transition duration-100;
+}
+.fiverr-btn-main {
+  @apply bg-fiverr-main text-white rounded-lg py-1 px-4 transition duration-100;
 }
 .fiverr-btn-main-bg {
   @apply bg-fiverr-main text-white;

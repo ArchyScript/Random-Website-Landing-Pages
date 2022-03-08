@@ -1,26 +1,27 @@
 <template>
   <!-- Contact Us -->
-  <section
-    id="contact"
-    class="mt-12 lg:mt-20 py-5"
-    style="background-color: #4a73e8;"
-  >
-    <div
-      class="container grid grid-cols-2 lg:mt-8 gap-6 p-10 lg:p-20 bg-mysqr-dark-dark"
-    >
+  <section id="contact" class="mt-12 lg:mt-20 py-5">
+    <div class="container grid grid-cols-2 lg:mt-8 gap-6 p-10 lg:p-20">
       <!-- Contect -->
+
+      <div class="col-span-2 lg:col-span-1 flex flex-1 relative">
+        <img
+          class="flex justify-center items-center mx-auto p-2"
+          :src="require('@/assets/mysquareroof/squareroof-dark.svg')"
+          alt=""
+        />
+      </div>
+
       <div
         class="col-span-2 lg:col-span-1 flex flex-col items-center lg:items-start"
       >
         <h1
-          class="text-white text-2xl mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left pr-4 mb-4 lg:mb-8"
+          class="text-2xl mt-10 mx-auto md:text-3xl lg:text-4xl font-semibold text-center lg:text-left pr-4 mb-4 lg:mb-8"
         >
           Build a solid future in real estate. Join Now
         </h1>
 
-        <p
-          class="text-mysqr-gray text-center lg:text-left text-lg mb-3 lg:mb-6"
-        >
+        <p class="text-center lg:text-left text-lg mb-3 lg:mb-6">
           Join our exclusive community of co-owners to learn more about real
           estate investments and co-ownership.
         </p>
@@ -39,14 +40,6 @@
             Join
           </button>
         </div>
-      </div>
-
-      <div class="col-span-2 lg:col-span-1 flex flex-1 relative">
-        <img
-          class="flex justify-center items-center mx-auto p-2"
-          :src="require('@/assets/mysquareroof/squareroof-dark.svg')"
-          alt=""
-        />
       </div>
     </div>
   </section>
