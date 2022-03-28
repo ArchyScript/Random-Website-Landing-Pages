@@ -7,7 +7,7 @@
         <h1
           class="text-mysqr-dark-dark text-3xl se mx-auto md:text-4xl lg:text-5xl font-bold text-center mb-4 lg:mb-8"
         >
-          Top Websites Landing Page Clone
+          Top Websites Landing Page Clonenbfnf/k
         </h1>
 
         <p
