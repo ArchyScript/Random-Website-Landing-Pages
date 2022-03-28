@@ -51,8 +51,12 @@
 
           <div class="flex justify-center items-center">
             <button
-              :class="scrollShadowBoolean ? 'text-white' : 'text-gray-500'"
-              class="hidden sm:flex mx-2 cursor-pointer font-bold text-white"
+              :class="
+                scrollShadowBoolean
+                  ? 'text-white bordwhiteer-white'
+                  : 'text-gray-500 border-gray-500'
+              "
+              class="hidden sm:flex mx-2 cursor-pointer font-bold"
             >
               Sign In
               <i class="far fa-badge-check"></i>

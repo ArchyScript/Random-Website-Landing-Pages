@@ -45,26 +45,26 @@ export default {
         link: 'https://google.com',
         image_url: require('@/assets/stranerd/technext.png'),
       },
-      {
-        title: 'Techpoint',
-        link: 'https://google.com',
-        image_url: require('@/assets/stranerd/techpoint.png'),
-      },
-      {
-        title: 'Technext',
-        link: 'https://google.com',
-        image_url: require('@/assets/stranerd/technext.png'),
-      },
-      {
-        title: 'Techpoint',
-        link: 'https://google.com',
-        image_url: require('@/assets/stranerd/techpoint.png'),
-      },
-      {
-        title: 'Technext',
-        link: 'https://google.com',
-        image_url: require('@/assets/stranerd/technext.png'),
-      },
+      // {
+      //   title: 'Techpoint',
+      //   link: 'https://google.com',
+      //   image_url: require('@/assets/stranerd/techpoint.png'),
+      // },
+      // {
+      //   title: 'Technext',
+      //   link: 'https://google.com',
+      //   image_url: require('@/assets/stranerd/technext.png'),
+      // },
+      // {
+      //   title: 'Techpoint',
+      //   link: 'https://google.com',
+      //   image_url: require('@/assets/stranerd/techpoint.png'),
+      // },
+      // {
+      //   title: 'Technext',
+      //   link: 'https://google.com',
+      //   image_url: require('@/assets/stranerd/technext.png'),
+      // },
     ])
 
     return {

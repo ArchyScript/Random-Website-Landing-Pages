@@ -23,7 +23,7 @@
               :key="footer_sub_link"
               class="text-font-light mb-4 cursor-pointer font-light text-white text-sm hover:text-mysqr-main"
             >
-              <a :href="footer_sub_link.link">
+              <a :href="footer_sub_link.link" class="text-underline">
                 {{ footer_sub_link.title }}
               </a>
             </span>

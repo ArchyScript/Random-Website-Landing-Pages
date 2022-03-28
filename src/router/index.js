@@ -16,6 +16,12 @@ const Enyata = () =>
 const Fiverr = () =>
     import ('@/components/Fiverr/Main.vue')
 
+// const JoyCharityOrganization = () =>
+//     import ('@/components/JoyCharityOrganization/Home/Main.vue')
+// const AboutJoyCharityOrganization = () =>
+//     import ('@/components/JoyCharityOrganization/About/Main.vue')
+// const JoyCharityOrganizationContact = () =>
+//     import ('@/components/JoyCharityOrganization/Contact/Main.vue')
 
 const routes = [{
         path: '/',
@@ -52,6 +58,20 @@ const routes = [{
         name: 'Fiverr',
         component: Fiverr,
     },
+    // {
+    //     path: '/jco',
+    //     name: 'JoyCharityOrganization',
+    //     component: JoyCharityOrganization,
+    //     children: [{
+    //             path: '/jco/about',
+    //             component: AboutJoyCharityOrganization,
+    //         },
+    //         {
+    //             path: 'posts',
+    //             component: JoyCharityOrganizationContact,
+    //         },
+    //     ],
+    // },
 ]
 
 const router = createRouter({

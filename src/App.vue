@@ -5,6 +5,9 @@
 </template>
 
 <style>
+a > * {
+  text-decoration: underline;
+}
 /*
 @import url('https://fonts.googleapis.com/css?family=Roboto+Condensed');
 

@@ -155,13 +155,13 @@ export default {
         original_website_link: 'https://heroku.com/',
         is_ready: false,
       },
-      // {
-      //   website_name: '',
-      //   description: ``,
-      //   route: '/',
-      //   original_website_link: 'https://.com/',
-      //   is_ready: false,
-      // },
+      {
+        website_name: 'Joy Charity Organization',
+        description: ``,
+        route: '/jco',
+        original_website_link: 'https://.com/',
+        is_ready: true,
+      },
       // {
       //   website_name: '',
       //   description: ``,

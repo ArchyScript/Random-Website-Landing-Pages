@@ -20,6 +20,9 @@ module.exports = {
                 'fiverr-main': '#19A463',
                 'fiverr-dark-dark': '#132740',
                 'fiverr-gray': '#76818E',
+                'jco-main': '#19A463',
+                'jco-dark-dark': '#132740',
+                'jco-gray': '#76818E',
             },
             animation: { 'spin-slow': 'spin 10s linear infinite' },
 
